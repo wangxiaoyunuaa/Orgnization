@@ -949,6 +949,351 @@
             line-height: 1.6;
         }
         
+        /* 部门概览 */
+        .dept-overview {
+            background: white;
+            border-radius: var(--radius);
+            box-shadow: var(--shadow);
+            margin-bottom: 24px;
+            overflow: hidden;
+        }
+        
+        .dept-overview-header {
+            padding: 16px 20px;
+            background: linear-gradient(135deg, var(--dept-color) 0%, var(--dept-color-light, #f0f0f0) 100%);
+            color: white;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+        
+        .dept-overview-header svg {
+            width: 24px;
+            height: 24px;
+        }
+        
+        .dept-overview-title {
+            font-size: 16px;
+            font-weight: 600;
+        }
+        
+        .dept-overview-body {
+            padding: 20px;
+        }
+        
+        .dept-overview-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 16px;
+            margin-bottom: 16px;
+        }
+        
+        .dept-overview-item {
+            background: var(--bg-light);
+            padding: 12px 16px;
+            border-radius: 8px;
+        }
+        
+        .dept-overview-item-label {
+            font-size: 12px;
+            color: var(--text-gray);
+            margin-bottom: 4px;
+        }
+        
+        .dept-overview-item-value {
+            font-size: 14px;
+            color: var(--text-dark);
+            line-height: 1.5;
+        }
+        
+        .dept-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin-top: 12px;
+        }
+        
+        .dept-tag {
+            display: inline-flex;
+            align-items: center;
+            gap: 4px;
+            background: linear-gradient(135deg, var(--primary), #667eea);
+            color: white;
+            padding: 4px 12px;
+            border-radius: 16px;
+            font-size: 12px;
+            font-weight: 500;
+        }
+        
+        .dept-tag.ai {
+            background: linear-gradient(135deg, #10b981, #059669);
+        }
+        
+        .dept-tag.service {
+            background: linear-gradient(135deg, #f59e0b, #d97706);
+        }
+        
+        /* 部门负责人信息 */
+        .dept-leader-section {
+            background: white;
+            border-radius: var(--radius);
+            box-shadow: var(--shadow);
+            margin-bottom: 24px;
+            overflow: hidden;
+        }
+        
+        .dept-leader-header {
+            padding: 16px 20px;
+            background: var(--bg-light);
+            border-bottom: 1px solid var(--border);
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+        
+        .dept-leader-avatar {
+            width: 48px;
+            height: 48px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, var(--dept-color), var(--dept-color-light, #ccc));
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 20px;
+            font-weight: 600;
+        }
+        
+        .dept-leader-info h3 {
+            font-size: 16px;
+            font-weight: 600;
+            color: var(--text-dark);
+            margin-bottom: 4px;
+        }
+        
+        .dept-leader-info p {
+            font-size: 13px;
+            color: var(--text-gray);
+        }
+        
+        .dept-leader-body {
+            padding: 20px;
+        }
+        
+        .dept-leader-mission {
+            background: linear-gradient(135deg, var(--bg-light) 0%, white 100%);
+            padding: 12px 16px;
+            border-radius: 8px;
+            border-left: 3px solid var(--dept-color);
+            margin-bottom: 16px;
+            font-size: 14px;
+            color: var(--text-dark);
+            line-height: 1.6;
+        }
+        
+        .dept-leader-subtitle {
+            font-size: 14px;
+            font-weight: 600;
+            color: var(--text-dark);
+            margin: 20px 0 12px;
+            padding-bottom: 8px;
+            border-bottom: 1px solid var(--border);
+        }
+        
+        .dept-leader-subtitle:first-of-type {
+            margin-top: 0;
+        }
+        
+        .dept-responsibility-list {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        
+        .dept-responsibility-item {
+            display: flex;
+            gap: 12px;
+            padding: 10px 12px;
+            background: var(--bg-light);
+            border-radius: 8px;
+        }
+        
+        .dept-responsibility-item .area {
+            font-weight: 600;
+            color: var(--dept-color);
+            min-width: 80px;
+        }
+        
+        .dept-responsibility-item .detail {
+            flex: 1;
+            font-size: 13px;
+            color: var(--text-dark);
+        }
+        
+        .dept-decision-table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        
+        .dept-decision-table th,
+        .dept-decision-table td {
+            padding: 10px 12px;
+            text-align: left;
+            border-bottom: 1px solid var(--border);
+            font-size: 13px;
+        }
+        
+        .dept-decision-table th {
+            background: var(--bg-light);
+            font-weight: 600;
+            color: var(--text-dark);
+        }
+        
+        .dept-decision-table td {
+            color: var(--text-gray);
+        }
+        
+        .dept-kpi-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 12px;
+        }
+        
+        .dept-kpi-item {
+            background: var(--bg-light);
+            padding: 12px 16px;
+            border-radius: 8px;
+            border-left: 3px solid var(--dept-color);
+        }
+        
+        .dept-kpi-category {
+            font-size: 11px;
+            color: var(--text-gray);
+            margin-bottom: 4px;
+        }
+        
+        .dept-kpi-name {
+            font-size: 13px;
+            font-weight: 600;
+            color: var(--text-dark);
+            margin-bottom: 2px;
+        }
+        
+        .dept-kpi-target {
+            font-size: 12px;
+            color: var(--dept-color);
+            font-weight: 500;
+        }
+        
+        /* 小组详情增强 */
+        .group-card {
+            background: white;
+            border-radius: var(--radius);
+            box-shadow: var(--shadow);
+            overflow: hidden;
+            border-top: 4px solid var(--dept-color);
+        }
+        
+        .group-card-position {
+            padding: 10px 16px;
+            background: var(--bg-light);
+            font-size: 12px;
+            color: var(--text-gray);
+            border-bottom: 1px solid var(--border);
+        }
+        
+        .group-card-responsibilities {
+            padding: 12px 16px;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 6px;
+            border-bottom: 1px solid var(--border);
+        }
+        
+        .group-card-responsibility {
+            background: white;
+            border: 1px solid var(--border);
+            padding: 4px 10px;
+            border-radius: 4px;
+            font-size: 12px;
+            color: var(--text-dark);
+        }
+        
+        .group-card-manager {
+            padding: 8px 16px;
+            font-size: 12px;
+            color: var(--text-gray);
+            background: var(--bg-light);
+        }
+        
+        .group-card-manager strong {
+            color: var(--dept-color);
+        }
+        
+        /* 部门输出 */
+        .dept-outputs-section {
+            background: white;
+            border-radius: var(--radius);
+            box-shadow: var(--shadow);
+            margin-bottom: 24px;
+            overflow: hidden;
+        }
+        
+        .dept-outputs-header {
+            padding: 16px 20px;
+            background: var(--bg-light);
+            border-bottom: 1px solid var(--border);
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            font-weight: 600;
+        }
+        
+        .dept-outputs-body {
+            padding: 16px 20px;
+        }
+        
+        .dept-output-item {
+            display: grid;
+            grid-template-columns: 140px 1fr 140px;
+            gap: 16px;
+            padding: 12px 16px;
+            background: var(--bg-light);
+            border-radius: 8px;
+            margin-bottom: 12px;
+            align-items: start;
+        }
+        
+        .dept-output-item:last-child {
+            margin-bottom: 0;
+        }
+        
+        .dept-output-type {
+            font-weight: 600;
+            color: var(--dept-color);
+            font-size: 13px;
+        }
+        
+        .dept-output-content {
+            font-size: 13px;
+            color: var(--text-dark);
+        }
+        
+        .dept-output-to {
+            font-size: 12px;
+            color: var(--text-gray);
+            text-align: right;
+        }
+        
+        .dept-output-quality {
+            grid-column: 1 / -1;
+            font-size: 12px;
+            color: var(--text-gray);
+            padding-top: 8px;
+            border-top: 1px dashed var(--border);
+            margin-top: 4px;
+        }
+        
         .group-grid {
             display: grid;
             grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
@@ -2257,53 +2602,51 @@
                         <svg class="sidebar-dept-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18l6-6-6-6"/></svg>
                     </div>
                     <div class="sidebar-roles">
+                        <div class="sidebar-role-item" onclick="filterByRole('GOV')">
+                            <span class="role-dot" style="background:#1E40AF"></span>
+                            <span class="sidebar-role-name">监管业务拓展岗</span>
+                        </div>
                         <div class="sidebar-role-item" onclick="filterByRole('CSE')">
                             <span class="role-dot" style="background:#EF4444"></span>
-                            <span class="sidebar-role-name">业务拓展岗</span>
-                            <span class="sidebar-role-count">13个</span>
+                            <span class="sidebar-role-name">企业业务拓展岗</span>
                         </div>
                     </div>
                 </div>
                 <div class="sidebar-dept-group" id="dept-PM">
                     <div class="sidebar-dept-header" onclick="toggleDept('PM'); showView('dept-detail', 'PM')">
                         <div class="sidebar-dept-icon" style="background:#3B82F6">PM</div>
-                        <span class="sidebar-dept-name">产品方案部</span>
+                        <span class="sidebar-dept-name">AI产品方案部</span>
                         <svg class="sidebar-dept-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18l6-6-6-6"/></svg>
                     </div>
                     <div class="sidebar-roles">
                         <div class="sidebar-role-item" onclick="filterByRole('PM')">
                             <span class="role-dot" style="background:#3B82F6"></span>
                             <span class="sidebar-role-name">产品方案规划岗</span>
-                            <span class="sidebar-role-count">7个</span>
                         </div>
                         <div class="sidebar-role-item" onclick="filterByRole('UI')">
                             <span class="role-dot" style="background:#8B5CF6"></span>
                             <span class="sidebar-role-name">产品体验设计岗</span>
-                            <span class="sidebar-role-count">8个</span>
                         </div>
                     </div>
                 </div>
                 <div class="sidebar-dept-group" id="dept-DEV">
                     <div class="sidebar-dept-header" onclick="toggleDept('DEV'); showView('dept-detail', 'DEV')">
                         <div class="sidebar-dept-icon" style="background:#06B6D4">DEV</div>
-                        <span class="sidebar-dept-name">应用研发部</span>
+                        <span class="sidebar-dept-name">AI应用研发部</span>
                         <svg class="sidebar-dept-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18l6-6-6-6"/></svg>
                     </div>
                     <div class="sidebar-roles">
                         <div class="sidebar-role-item" onclick="filterByRole('AIBE')">
                             <span class="role-dot" style="background:#10B981"></span>
                             <span class="sidebar-role-name">AI后端工程师</span>
-                            <span class="sidebar-role-count">6个</span>
                         </div>
                         <div class="sidebar-role-item" onclick="filterByRole('AIIE')">
                             <span class="role-dot" style="background:#06B6D4"></span>
                             <span class="sidebar-role-name">AI交互工程师</span>
-                            <span class="sidebar-role-count">6个</span>
                         </div>
                         <div class="sidebar-role-item" onclick="filterByRole('AITE')">
                             <span class="role-dot" style="background:#F59E0B"></span>
                             <span class="sidebar-role-name">AI测试工程师</span>
-                            <span class="sidebar-role-count">5个</span>
                         </div>
                     </div>
                 </div>
@@ -2317,7 +2660,6 @@
                         <div class="sidebar-role-item" onclick="filterByRole('CSM')">
                             <span class="role-dot" style="background:#EC4899"></span>
                             <span class="sidebar-role-name">客户服务经理</span>
-                            <span class="sidebar-role-count">8个</span>
                         </div>
                     </div>
                 </div>
@@ -2331,22 +2673,18 @@
                         <div class="sidebar-role-item" onclick="filterByRole('TDG-AIBE')">
                             <span class="role-dot" style="background:#059669"></span>
                             <span class="sidebar-role-name">AI后端工程师(TDG)</span>
-                            <span class="sidebar-role-count">6个</span>
                         </div>
                         <div class="sidebar-role-item" onclick="filterByRole('TDG-AIIE')">
                             <span class="role-dot" style="background:#0891B2"></span>
                             <span class="sidebar-role-name">AI交互工程师(TDG)</span>
-                            <span class="sidebar-role-count">6个</span>
                         </div>
                         <div class="sidebar-role-item" onclick="filterByRole('TDG-VDG')">
                             <span class="role-dot" style="background:#6366F1"></span>
                             <span class="sidebar-role-name">可信数据治理岗</span>
-                            <span class="sidebar-role-count">4个</span>
                         </div>
                         <div class="sidebar-role-item" onclick="filterByRole('TDG-DEL')">
                             <span class="role-dot" style="background:#8B5CF6"></span>
                             <span class="sidebar-role-name">可信数据验收交付岗</span>
-                            <span class="sidebar-role-count">4个</span>
                         </div>
                     </div>
                 </div>
@@ -2368,6 +2706,15 @@
                         <polyline points="22,4 12,14.01 9,11.01"/>
                     </svg>
                     <span>质量保障</span>
+                </div>
+                <div class="nav-item" onclick="showView('tdg-rule')">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/>
+                        <polyline points="14,2 14,8 20,8"/>
+                        <line x1="16" y1="13" x2="8" y2="13"/>
+                        <line x1="16" y1="17" x2="8" y2="17"/>
+                    </svg>
+                    <span>TDG数据治理</span>
                 </div>
             </div>
         </aside>
@@ -2404,17 +2751,18 @@
         ];
         
         const roles = [
-            { id: 'PM', name: '产品方案规划岗', color: '#3B82F6' },
-            { id: 'UI', name: '产品体验设计岗', color: '#8B5CF6' },
-            { id: 'AIIE', name: 'AI交互工程师', color: '#06B6D4' },
-            { id: 'AIBE', name: 'AI后端工程师', color: '#10B981' },
-            { id: 'AITE', name: 'AI测试工程师', color: '#F59E0B' },
-            { id: 'CSM', name: '客户服务经理', color: '#EC4899' },
-            { id: 'CSE', name: '业务拓展岗', color: '#EF4444' },
-            { id: 'TDG-VDG', name: '可信数据治理岗', color: '#6366F1' },
-            { id: 'TDG-DEL', name: '可信数据验收交付岗', color: '#8B5CF6' },
-            { id: 'TDG-AIIE', name: 'AI交互工程师(TDG)', color: '#0891B2' },
-            { id: 'TDG-AIBE', name: 'AI后端工程师(TDG)', color: '#059669' }
+            { id: 'PM', name: '产品方案规划岗', color: '#3B82F6', files: ['AI产品方案部产品方案规划岗 .docx'] },
+            { id: 'UI', name: '产品体验设计岗', color: '#8B5CF6', files: ['AI产品方案部产品体验设计岗.docx'] },
+            { id: 'AIIE', name: 'AI交互工程师', color: '#06B6D4', files: ['AI应用研发部AI交互工程师.xlsx'] },
+            { id: 'AIBE', name: 'AI后端工程师', color: '#10B981', files: ['AI应用研发部AI后端工程师.xlsx'] },
+            { id: 'AITE', name: 'AI测试工程师', color: '#F59E0B', files: ['AI应用研发部AI测试工程师.xlsx'] },
+            { id: 'CSM', name: '客户服务经理', color: '#EC4899', files: ['客户服务经理.docx'] },
+            { id: 'GOV', name: '监管业务拓展岗', color: '#1E40AF', files: ['监管业务拓展岗.docx'] },
+            { id: 'CSE', name: '企业业务拓展岗', color: '#EF4444', files: ['企业业务拓展岗.docx', '企业业务拓展岗.xlsx'] },
+            { id: 'TDG-VDG', name: '可信数据治理岗', color: '#6366F1', files: ['TDG交付部门可信数据治理岗.xlsx'] },
+            { id: 'TDG-DEL', name: '可信数据验收交付岗', color: '#8B5CF6', files: ['TDG交付部门可信数据验收交付岗.xlsx'] },
+            { id: 'TDG-AIIE', name: 'AI交互工程师(TDG)', color: '#0891B2', files: ['TDG交付部门AI交互工程师.xlsx'] },
+            { id: 'TDG-AIBE', name: 'AI后端工程师(TDG)', color: '#059669', files: ['TDG交付部门AI后端工程师.xlsx'] }
         ];
         
         const departments = [
@@ -2423,35 +2771,86 @@
                 name: '客户业务拓展部',
                 color: '#EF4444',
                 leader: '王晓宇',
-                description: '负责客户开发、需求对接、方案设计、合同签约及售后维护全流程，统筹销售全周期工作推进，实现公司销售业绩目标与客户价值双赢的核心部门',
+                position: '负责事业部客户开拓、市场拓展、渠道建设，是事业部对外业务的窗口和入口',
+                coreFunctions: ['政府药监部门客户开拓与关系维护', '药品生产企业客户开发与合作拓展', '药品企业数据服务合作拓展', '业务机会识别与评估', '解决方案准备与商务谈判'],
+                aiSupport: ['AI情报分析', 'AI商机评估', 'AI客户画像', 'AI方案生成'],
+                serviceLines: ['政府监管业务线', '企业合规业务线', '数据服务线'],
+                outputs: [
+                    { type: '商机输出', content: '商机评估报告、客户需求文档', to: 'AI产品方案部', quality: '商机评估准确率≥80%；需求描述完整' },
+                    { type: '解决方案', content: '解决方案文档、方案演示PPT', to: '客户业务拓展部内部', quality: '方案完整针对客户需求；客户满意度≥85%' },
+                    { type: '合同交接（政府/企业）', content: '项目交接清单、合同副本', to: 'AI应用研发部', quality: '交接清单完整；客户需求无遗漏传递' },
+                    { type: '合同交接', content: '项目交接清单、合同副本', to: 'TDG交付部', quality: '交接清单完整；客户需求无遗漏传递' },
+                    { type: '客户关系', content: '客户档案更新、关系评估报告', to: '客户服务部', quality: '档案完整可追溯；关系评估客观准确' }
+                ],
+                leaderInfo: {
+                    mission: '作为事业部负责人兼客户业务拓展部负责人，统筹事业部整体运营，负责客户开拓和市场拓展，推动业务持续增长',
+                    responsibilities: [
+                        { area: '事业部统筹', detail: '制定事业部发展战略；统筹各部门协同；重大决策拍板', output: '年度战略规划、季度经营报告' },
+                        { area: '客户开拓', detail: '开拓政府药监部门客户；拓展药品生产企业合作；推进企业数据服务', output: '新客户数量≥20个/年；合同金额≥目标' },
+                        { area: '商务管理', detail: '商务谈判、合同签订、价格策略', output: '谈判成功率≥60%；合同条款合理' },
+                        { area: '关系维护', detail: '维护核心客户关系；处理重大客户问题', output: '客户满意度≥90%；流失率≤5%' },
+                        { area: '团队管理', detail: '建设高绩效团队；培养业务骨干', output: '团队目标达成率≥90%' }
+                    ],
+                    decisions: [
+                        { type: '合同审批', scope: '≤500万合同自主审批', condition: '>500万需上报' },
+                        { type: '价格决策', scope: '标准定价权', condition: '折扣>8折需审批' },
+                        { type: '人员任免', scope: '部门内岗位调整', condition: '主管级以上需审批' },
+                        { type: '资源调配', scope: '部门内资源调配', condition: '跨部门需协调' }
+                    ],
+                    kpis: [
+                        { category: '业绩指标', name: '新签合同金额', target: '按年度目标' },
+                        { category: '业绩指标', name: '客户数量增长', target: '≥20%' },
+                        { category: '质量指标', name: '客户满意度', target: '≥90%' },
+                        { category: '质量指标', name: '商机转化率', target: '≥40%' },
+                        { category: '效率指标', name: '项目交接及时率', target: '≥95%' }
+                    ]
+                },
                 groups: [
-                    { id: 'CSE-EP', name: '企业服务拓展组', positions: [{ id: 'CSE-EP', name: '业务拓展岗', mapToRole: 'CSE', nodeCount: 13, nodes: ['CSE_001', 'CSE_002', 'CSE_003', 'CSE_004', 'CSE_005', 'CSE_006', 'CSE_007', 'CSE_008', 'CSE_009', 'CSE_010', 'CSE_011', 'CSE_012', 'CSE_013'] }] },
-                    { id: 'CSE-GOV', name: '监管业务拓展组', positions: [{ id: 'CSE-GOV', name: '业务拓展岗', mapToRole: 'CSE', nodeCount: 13, nodes: ['CSE_001', 'CSE_002', 'CSE_003', 'CSE_004', 'CSE_005', 'CSE_006', 'CSE_007', 'CSE_008', 'CSE_009', 'CSE_010', 'CSE_011', 'CSE_012', 'CSE_013'] }] }
+                    { id: 'CSE-EP', name: '企业服务拓展组', position: '负责药品生产企业的客户开拓与合作拓展', coreResponsibilities: ['企业客户开发', 'GMP合规需求挖掘', '合作方案制定'], manager: '吴学强', positions: [{ id: 'CSE-EP', name: '企业业务拓展岗', mapToRole: 'CSE', nodeCount: 13, nodes: ['CSE_001', 'CSE_002', 'CSE_003', 'CSE_004', 'CSE_005', 'CSE_006', 'CSE_007', 'CSE_008', 'CSE_009', 'CSE_010', 'CSE_011', 'CSE_012', 'CSE_013'] }] },
+                    { id: 'CSE-GOV', name: '监管业务拓展组', position: '负责政府药监部门的客户开拓与关系维护', coreResponsibilities: ['政府客户关系维护', '监管业务需求对接', '合作机会推进'], manager: '张礼、张晓寒', positions: [{ id: 'CSE-GOV', name: '监管业务拓展岗', mapToRole: 'GOV', nodeCount: 15, nodes: ['GOV_001', 'GOV_002', 'GOV_003', 'GOV_004', 'GOV_005', 'GOV_006', 'GOV_007', 'GOV_008', 'GOV_009', 'GOV_010', 'GOV_011', 'GOV_014', 'GOV_015'] }] }
                 ]
             },
             {
                 id: 'PM',
-                name: '产品方案部',
+                name: 'AI产品方案部',
                 color: '#3B82F6',
                 leader: '贺卫萌',
-                description: '负责产品规划、方案设计、用户体验设计，是产品价值创造的核心部门',
+                position: '负责事业部产品规划、方案设计、用户体验设计，是产品价值创造的核心部门',
+                coreFunctions: ['政府监管业务产品规划与设计', '企业合规业务产品规划与设计', '产品UI/UX设计与体验优化', '产品PRD编写与需求管理'],
+                aiSupport: ['AI需求分析', 'AI PRD生成', 'AI原型辅助', 'AI设计规范检查'],
+                serviceLines: ['政府监管业务线', '企业合规业务线'],
+                outputs: [
+                    { type: '产品PRD', content: 'PRD文档，原型设计', to: 'AI应用研发部', quality: 'PRD覆盖全部功能点；验收标准Given-When-Then格式完整' },
+                    { type: '设计交付物', content: '设计稿、组件库、Design Token', to: 'AI应用研发部', quality: '设计稿遵循规范；组件库可复用；还原度≥98%' },
+                    { type: '交互说明', content: '交互逻辑文档、动效参数', to: 'AI应用研发部', quality: '交互逻辑覆盖所有操作场景；动效参数可落地' },
+                    { type: '需求变更', content: '变更评估报告、更新后PRD', to: 'AI应用研发部', quality: '评估含影响范围、工作量、风险；变更可控' }
+                ],
+                leaderInfo: {
+                    mission: '负责事业部产品规划与设计，打造具有竞争力的产品解决方案，支撑业务拓展',
+                    responsibilities: [
+                        { area: '产品规划', detail: '制定产品路线图；定义产品优先级', output: '产品规划文档、PRD基线' },
+                        { area: '需求管理', detail: '需求分析、优先级排序、变更控制', output: '需求池管理、变更记录' },
+                        { area: '设计质量', detail: '设计规范制定、设计评审', output: '设计规范手册、设计验收通过' },
+                        { area: '跨部门协作', detail: '与研发、测试、交付团队协作', output: '项目顺利交付' },
+                        { area: '团队管理', detail: '设计人才培养、团队建设', output: '团队能力提升' }
+                    ],
+                    decisions: [
+                        { type: '需求变更', scope: '范围内需求调整', condition: '影响进度>3天需审批' },
+                        { type: '设计决策', scope: 'UI/UX设计方向', condition: '重大方向调整需汇报' },
+                        { type: '优先级调整', scope: '产品需求优先级', condition: '涉及跨业务线需协调' }
+                    ],
+                    kpis: [
+                        { category: '效率指标', name: 'PRD交付及时率', target: '≥95%' },
+                        { category: '效率指标', name: '需求响应时长', target: '≤5天' },
+                        { category: '质量指标', name: 'PRD评审一次通过率', target: '≥80%' },
+                        { category: '质量指标', name: '设计还原度', target: '≥95%' },
+                        { category: '协作指标', name: '跨部门满意度', target: '≥90分' }
+                    ]
+                },
                 groups: [
-                    { id: 'PM-GOV', name: '监管业务组', positions: [{ id: 'PM-GOV', name: '产品方案规划岗', mapToRole: 'PM', nodeCount: 7, nodes: ['PM_001', 'PM_002', 'PM_003', 'PM_004', 'PM_005', 'PM_006', 'PM_007'] }] },
-                    { id: 'PM-ENT', name: '企业服务业务组', positions: [{ id: 'PM-ENT', name: '产品方案规划岗', mapToRole: 'PM', nodeCount: 7, nodes: ['PM_001', 'PM_002', 'PM_003', 'PM_004', 'PM_005', 'PM_006', 'PM_007'] }] },
-                    { id: 'UI', name: 'UI设计组', positions: [{ id: 'UI', name: '产品体验设计岗', mapToRole: 'UI', nodeCount: 8, nodes: ['UI_001', 'UI_002', 'UI_003', 'UI_004', 'UI_005', 'UI_006', 'UI_007', 'UI_008'] }] }
-                ]
-            },
-            {
-                id: 'DEV',
-                name: '应用研发部',
-                color: '#06B6D4',
-                leader: '孙福新',
-                description: '负责产品研发、系统开发、测试验证，是产品交付的核心部门',
-                groups: [
-                    { id: 'DEV-GOV', name: '监管业务组', positions: [{ id: 'DEV-GOV-BE', name: 'AI后端工程师', mapToRole: 'AIBE', nodeCount: 6, nodes: ['AIBE_001', 'AIBE_002', 'AIBE_003', 'AIBE_004', 'AIBE_005', 'AIBE_006'] }] },
-                    { id: 'DEV-ENT', name: '企业服务业务组', positions: [{ id: 'DEV-ENT-BE', name: 'AI后端工程师', mapToRole: 'AIBE', nodeCount: 6, nodes: ['AIBE_001', 'AIBE_002', 'AIBE_003', 'AIBE_004', 'AIBE_005', 'AIBE_006'] }] },
-                    { id: 'DEV-COOR', name: '协同业务组', positions: [{ id: 'DEV-COOR-BE', name: 'AI后端工程师', mapToRole: 'AIBE', nodeCount: 6, nodes: ['AIBE_001', 'AIBE_002', 'AIBE_003', 'AIBE_004', 'AIBE_005', 'AIBE_006'] }, { id: 'DEV-COOR-FE', name: 'AI交互工程师', mapToRole: 'AIIE', nodeCount: 6, nodes: ['AIIE_001', 'AIIE_002', 'AIIE_003', 'AIIE_004', 'AIIE_005', 'AIIE_006'] }] },
-                    { id: 'DEV-TEST', name: '测试业务组', positions: [{ id: 'TEST', name: 'AI测试工程师', mapToRole: 'AITE', nodeCount: 5, nodes: ['AITE_001', 'AITE_002', 'AITE_003', 'AITE_004', 'AITE_005'] }] }
+                    { id: 'PM-GOV', name: '监管业务组', position: '负责政府药监监管业务的产品设计', coreResponsibilities: ['政府监管政策跟踪', '监管平台产品规划', 'PRD编写'], manager: '杜威', positions: [{ id: 'PM-GOV', name: '产品方案规划岗', mapToRole: 'PM', nodeCount: 8, nodes: ['PM_001', 'PM_002', 'PM_003', 'PM_004', 'PM_005', 'PM_006', 'PM_008', 'PM_010'] }] },
+                    { id: 'PM-ENT', name: '企业服务业务组', position: '负责药品生产企业合规业务的产品设计', coreResponsibilities: ['GMP合规需求分析', '合规生产系统设计', 'PRD编写'], manager: '高轶', positions: [{ id: 'PM-ENT', name: '产品方案规划岗', mapToRole: 'PM', nodeCount: 8, nodes: ['PM_001', 'PM_002', 'PM_003', 'PM_004', 'PM_005', 'PM_006', 'PM_008', 'PM_010'] }] },
+                    { id: 'UI', name: 'UI设计组', position: '负责产品UI/UX设计与体验优化', coreResponsibilities: ['产品视觉设计', '设计规范', '组件库', '交互动效'], manager: '徐海瑞', positions: [{ id: 'UI', name: '产品体验设计岗', mapToRole: 'UI', nodeCount: 8, nodes: ['UI_001', 'UI_002', 'UI_003', 'UI_004', 'UI_005', 'UI_006', 'UI_007', 'UI_008'] }] }
                 ]
             },
             {
@@ -2459,11 +2858,43 @@
                 name: '客户服务部',
                 color: '#EC4899',
                 leader: '贺卫萌',
-                description: '负责客户服务、现场支持、运维保障，是客户满意度保障的核心部门',
+                position: '负责事业部客户服务、现场支持、运维保障，是客户满意度保障的核心部门',
+                coreFunctions: ['客户系统日常运维与巡检', '客户问题一线处置', '客户新项目管理', '客户培训与赋能', '客户满意度管理'],
+                aiSupport: ['AI运维监控', 'AI问题分类', 'AI培训生成', 'AI满意度分析'],
+                serviceLines: ['政府监管业务线'],
+                outputs: [
+                    { type: '运维报告', content: '系统运行报告、问题处理记录', to: 'AI产品方案部、AI应用研发部', quality: '系统可用性≥99.5%；故障响应≤30分钟' },
+                    { type: '运维报告', content: '数据服务运行报告、问题处理记录', to: 'TDG交付部', quality: '数据服务可用性≥99.9%' },
+                    { type: '需求反馈', content: '用户需求反馈、优化建议', to: 'AI产品方案部', quality: '反馈分类覆盖率100%；高频问题识别准确' },
+                    { type: '客户满意度', content: '满意度调查报告', to: '客户业务拓展部', quality: '满意度≥90%；流失预警及时' },
+                    { type: '新项目需求', content: '项目需求文档、优先级建议', to: 'AI产品方案部', quality: '需求描述完整；优先级合理' }
+                ],
+                leaderInfo: {
+                    mission: '负责事业部客户服务与运维保障，确保客户系统稳定运行，提升客户满意度',
+                    responsibilities: [
+                        { area: '运维保障', detail: '制定运维规范；监控服务稳定性', output: '系统可用性≥99.5%' },
+                        { area: '问题处理', detail: '问题分级、升级机制、问题闭环', output: '故障响应≤30分钟；解决率≥95%' },
+                        { area: '客户培训', detail: '培训计划、培训实施、培训评估', output: '客户培训覆盖率100%' },
+                        { area: '新项目管理', detail: '新项目需求对接、项目实施', output: '新项目顺利上线' },
+                        { area: '满意度管理', detail: '满意度调查、问题改进', output: '客户满意度≥90%' }
+                    ],
+                    decisions: [
+                        { type: '运维决策', scope: '运维策略调整', condition: '影响服务需审批' },
+                        { type: '问题升级', scope: '问题升级判定', condition: '重大问题需汇报' },
+                        { type: '资源调配', scope: '驻场人员调配', condition: '跨区域需协调' }
+                    ],
+                    kpis: [
+                        { category: '效率指标', name: '故障响应时长', target: '≤30分钟' },
+                        { category: '效率指标', name: '问题解决率', target: '≥95%' },
+                        { category: '质量指标', name: '系统可用性', target: '≥99.5%' },
+                        { category: '质量指标', name: '客户满意度', target: '≥90分' },
+                        { category: '协作指标', name: '问题反馈及时率', target: '≥95%' }
+                    ]
+                },
                 groups: [
-                    { id: 'CSM-AH', name: '安徽服务组', positions: [{ id: 'CSM', name: '客户服务经理', mapToRole: 'CSM', nodeCount: 3, nodes: ['CSM_001', 'CSM_002', 'CSM_003'] }] },
-                    { id: 'CSM-YN', name: '云南服务组', positions: [{ id: 'CSM', name: '客户服务经理', mapToRole: 'CSM', nodeCount: 3, nodes: ['CSM_001', 'CSM_002', 'CSM_003'] }] },
-                    { id: 'CSM-XJ', name: '新疆服务组', positions: [{ id: 'CSM', name: '客户服务经理', mapToRole: 'CSM', nodeCount: 3, nodes: ['CSM_001', 'CSM_002', 'CSM_003'] }] }
+                    { id: 'CSM-AH', name: '安徽服务组', position: '负责安徽省客户现场服务', coreResponsibilities: ['安徽省药监局及企业现场服务', '系统运维', '问题处置'], manager: '余衡亮', positions: [{ id: 'CSM', name: '客户服务经理', mapToRole: 'CSM', nodeCount: 3, nodes: ['CSM_001', 'CSM_002', 'CSM_003'] }] },
+                    { id: 'CSM-YN', name: '云南服务组', position: '负责云南省客户现场服务', coreResponsibilities: ['云南省药监局及企业现场服务', '系统运维', '问题处置'], manager: '肖雷占', positions: [{ id: 'CSM', name: '客户服务经理', mapToRole: 'CSM', nodeCount: 3, nodes: ['CSM_001', 'CSM_002', 'CSM_003'] }] },
+                    { id: 'CSM-XJ', name: '新疆服务组', position: '负责新疆客户现场服务', coreResponsibilities: ['新疆药监局及企业现场服务', '系统运维', '问题处置'], manager: '王继云', positions: [{ id: 'CSM', name: '客户服务经理', mapToRole: 'CSM', nodeCount: 3, nodes: ['CSM_001', 'CSM_002', 'CSM_003'] }] }
                 ]
             },
             {
@@ -2471,11 +2902,84 @@
                 name: 'TDG交付部',
                 color: '#10B981',
                 leader: '吴魏',
-                description: '负责可信数据交付、技术研发，是数据价值实现的核心部门',
+                position: '作为数据服务独立业务线的核心部门，负责企业可信数据交付、技术研发，数据价值实现的核心',
+                coreFunctions: ['企业可信数据服务端到端交付', '可信数据架构设计与研发', '数据源采集', '数据治理与交付实施', '数据验收与合规审核'],
+                aiSupport: ['AI数据治理', 'AI合规审核', 'AI数据质量检测'],
+                serviceLines: ['数据服务线（独立业务线）'],
+                outputs: [
+                    { type: '数据交付物', content: '可信化数据、存证记录、区块链证明', to: '直接交付客户', quality: '数据可信化覆盖率100%；数据质量得分≥95分' },
+                    { type: '数据质量报告', content: '数据质量报告、稽核记录', to: '客户确认', quality: '差异率≤5%；修正后准确率100%' },
+                    { type: '交付文档', content: '交付清单、验收报告、客户回执', to: '客户业务拓展部归档', quality: '文档完整规范；取得有效回执' }
+                ],
+                leaderInfo: {
+                    mission: '负责事业部可信数据交付与技术研发，保障数据价值实现，支撑业务线数据需求',
+                    responsibilities: [
+                        { area: '技术研发', detail: '可信数据架构设计', output: '技术架构文档、专利/论文' },
+                        { area: '数据交付', detail: '数据接入、可信化处理、交付验收', output: '数据交付物、验收报告' },
+                        { area: '质量管理', detail: '数据质量监控、质量问题处理', output: '数据质量报告、问题解决记录' },
+                        { area: '合规管理', detail: '数据合规审核、销毁监督', output: '合规审批记录、销毁记录' },
+                        { area: '团队管理', detail: '研发人才培养、团队建设', output: '团队能力提升' }
+                    ],
+                    decisions: [
+                        { type: '技术选型', scope: '技术架构决策', condition: '重大架构调整需审批' },
+                        { type: '数据交付', scope: '交付方案审批', condition: '重大变更需汇报' },
+                        { type: '合规审批', scope: '数据治理项目审批', condition: '重大合规问题需上报' }
+                    ],
+                    kpis: [
+                        { category: '效率指标', name: '数据交付及时率', target: '≥95%' },
+                        { category: '效率指标', name: '联调问题解决率', target: '100%' },
+                        { category: '质量指标', name: '数据质量得分', target: '≥95分' },
+                        { category: '质量指标', name: '数据准确率', target: '≥99.9%' },
+                        { category: '合规指标', name: '合规审批通过率', target: '100%' }
+                    ]
+                },
                 groups: [
-                    { id: 'TDG-RD', name: 'TDG研发组', positions: [{ id: 'TDG-BE', name: 'AI后端工程师', mapToRole: 'TDG-AIBE', nodeCount: 6, nodes: ['TDG-AIBE_001', 'TDG-AIBE_002', 'TDG-AIBE_003', 'TDG-AIBE_004', 'TDG-AIBE_005', 'TDG-AIBE_006'] }, { id: 'TDG-FE', name: 'AI交互工程师', mapToRole: 'TDG-AIIE', nodeCount: 6, nodes: ['TDG-AIIE_001', 'TDG-AIIE_002', 'TDG-AIIE_003', 'TDG-AIIE_004', 'TDG-AIIE_005', 'TDG-AIIE_006'] }] },
-                    { id: 'TDG-VDG', name: '可信数据治理组', positions: [{ id: 'TDG-VDG', name: '可信数据治理岗', mapToRole: 'TDG-VDG', nodeCount: 4, nodes: ['VDG_001', 'VDG_002', 'VDG_003', 'VDG_004'] }] },
-                    { id: 'TDG-DEL', name: '可信数据验收交付组', positions: [{ id: 'TDG-DEL', name: '可信数据验收交付岗', mapToRole: 'TDG-DEL', nodeCount: 4, nodes: ['DEL_001', 'DEL_002', 'DEL_003', 'DEL_004'] }] }
+                    { id: 'TDG-RD', name: 'TDG研发组', position: '负责可信数据技术研发', coreResponsibilities: ['可信数据架构设计', '区块链模块开发', '数据质量引擎'], manager: '吴菲、王秀秀', positions: [{ id: 'TDG-BE', name: 'AI后端工程师', mapToRole: 'TDG-AIBE', nodeCount: 6, nodes: ['TDG-AIBE_001', 'TDG-AIBE_002', 'TDG-AIBE_003', 'TDG-AIBE_004', 'TDG-AIBE_005', 'TDG-AIBE_006'] }, { id: 'TDG-FE', name: 'AI交互工程师', mapToRole: 'TDG-AIIE', nodeCount: 6, nodes: ['TDG-AIIE_001', 'TDG-AIIE_002', 'TDG-AIIE_003', 'TDG-AIIE_004', 'TDG-AIIE_005', 'TDG-AIIE_006'] }] },
+                    { id: 'TDG-VDG', name: '可信数据治理组', position: '负责数据交付实施', coreResponsibilities: ['数据接入', '数据可信化处理', '交付文档编制'], manager: '吴巍、曹真真', positions: [{ id: 'TDG-VDG', name: '可信数据治理岗', mapToRole: 'TDG-VDG', nodeCount: 4, nodes: ['VDG_001', 'VDG_002', 'VDG_003', 'VDG_004'] }] },
+                    { id: 'TDG-DEL', name: '可信数据验收交付组', position: '负责数据验收与交付', coreResponsibilities: ['数据验收', '交付确认', '客户回执'], manager: '韩杰、周家伟', positions: [{ id: 'TDG-DEL', name: '可信数据验收交付岗', mapToRole: 'TDG-DEL', nodeCount: 4, nodes: ['DEL_001', 'DEL_002', 'DEL_003', 'DEL_004'] }] }
+                ]
+            },
+            {
+                id: 'DEV',
+                name: 'AI应用研发部',
+                color: '#06B6D4',
+                leader: '孙福新',
+                position: '负责事业部产品研发、系统开发、测试验证，是产品交付的核心部门',
+                coreFunctions: ['政府监管业务系统开发', '企业合规业务系统开发', '国家协同平台开发', '软件测试与质量保障'],
+                aiSupport: ['AI代码生成', 'AI测试自动化', 'AI性能优化', 'AI代码审查'],
+                serviceLines: ['政府监管业务线', '企业合规业务线', '数据服务线'],
+                outputs: [
+                    { type: '系统交付物', content: '可运行系统、部署包', to: '客户服务部', quality: '系统通过功能/性能/安全测试；无高危漏洞遗留' },
+                    { type: '技术文档', content: '接口文档、数据库设计、部署文档', to: '客户服务部', quality: '文档完整可执行' },
+                    { type: '测试报告', content: '测试报告、缺陷记录', to: 'AI产品方案部', quality: '测试覆盖率≥95%；P0级缺陷100%修复' }
+                ],
+                leaderInfo: {
+                    mission: '负责事业部产品研发与系统开发，保障产品质量，按时交付项目',
+                    responsibilities: [
+                        { area: '研发管理', detail: '制定技术规范；管理研发进度', output: '技术规范文档、项目计划' },
+                        { area: '架构设计', detail: '系统架构设计、技术选型', output: '架构设计文档' },
+                        { area: '质量管理', detail: '代码评审、测试管理、发布控制', output: '代码规范执行、测试通过' },
+                        { area: '团队建设', detail: '研发人才培养、技术积累', output: '团队能力提升、知识库' },
+                        { area: '项目交付', detail: '项目开发计划、执行控制', output: '按时交付、质量达标' }
+                    ],
+                    decisions: [
+                        { type: '技术选型', scope: '技术方案决策', condition: '重大技术选型需审批' },
+                        { type: '发布决策', scope: '版本发布审批', condition: '重大版本需汇报' },
+                        { type: '架构调整', scope: '系统架构调整', condition: '影响整体架构需审批' }
+                    ],
+                    kpis: [
+                        { category: '效率指标', name: '项目交付及时率', target: '≥90%' },
+                        { category: '效率指标', name: '代码评审覆盖率', target: '100%' },
+                        { category: '质量指标', name: '测试覆盖率', target: '≥95%' },
+                        { category: '质量指标', name: '缺陷遗留率', target: '≤2%' },
+                        { category: '安全指标', name: '安全漏洞修复率', target: '100%' }
+                    ]
+                },
+                groups: [
+                    { id: 'DEV-GOV', name: '监管业务组', position: '负责政府监管业务系统开发', coreResponsibilities: ['监管平台开发', '数据对接', '系统集成'], manager: '张扬、秦艳杰、王心、王雷雨', positions: [{ id: 'DEV-GOV-BE', name: 'AI后端工程师', mapToRole: 'AIBE', nodeCount: 6, nodes: ['AIBE_001', 'AIBE_002', 'AIBE_003', 'AIBE_004', 'AIBE_005', 'AIBE_006'] }] },
+                    { id: 'DEV-ENT', name: '企业服务业务组', position: '负责企业合规业务系统开发', coreResponsibilities: ['合规系统开发', 'GMP验证模块', '系统集成'], manager: '于再飞、高钊、张广前', positions: [{ id: 'DEV-ENT-BE', name: 'AI后端工程师', mapToRole: 'AIBE', nodeCount: 6, nodes: ['AIBE_001', 'AIBE_002', 'AIBE_003', 'AIBE_004', 'AIBE_005', 'AIBE_006'] }] },
+                    { id: 'DEV-COOR', name: '协同业务组', position: '负责国家协同平台开发', coreResponsibilities: ['协同平台开发', '接口实现', '性能优化'], manager: '李小龙、魏文浩、魏志学', positions: [{ id: 'DEV-COOR-BE', name: 'AI后端工程师', mapToRole: 'AIBE', nodeCount: 6, nodes: ['AIBE_001', 'AIBE_002', 'AIBE_003', 'AIBE_004', 'AIBE_005', 'AIBE_006'] }, { id: 'DEV-COOR-FE', name: 'AI交互工程师', mapToRole: 'AIIE', nodeCount: 6, nodes: ['AIIE_001', 'AIIE_002', 'AIIE_003', 'AIIE_004', 'AIIE_005', 'AIIE_006'] }] },
+                    { id: 'DEV-TEST', name: '测试业务组', position: '负责软件测试与质量保障', coreResponsibilities: ['测试计划', '用例设计', '测试执行', '报告归档'], manager: '李颖、陈霞', positions: [{ id: 'TEST', name: 'AI测试工程师', mapToRole: 'AITE', nodeCount: 5, nodes: ['AITE_001', 'AITE_002', 'AITE_003', 'AITE_004', 'AITE_005'] }] }
                 ]
             }
         ];
@@ -2511,16 +3015,16 @@
             },
             {
                 id: 'VAX',
-                name: '疫苗数据服务线',
+                name: '数据服务线',
                 color: '#F59E0B',
-                target: '疫苗企业',
-                value: '保障疫苗生产与流通数据真实性、可靠性',
+                target: '药品企业',
+                value: '保障药品生产与流通数据真实性、可靠性',
                 nodes: [
-                    { id: 'VAX_V1', name: '疫苗数据需求分析', goal: '理解疫苗企业数据服务需求，形成解决方案', gate: 'L1-Gate' },
-                    { id: 'VAX_V2', name: '疫苗数据平台设计', goal: '设计可信数据服务平台架构', gate: 'L1-Gate' },
-                    { id: 'VAX_V3', name: '疫苗数据平台开发', goal: '完成数据平台开发与部署', gate: 'L2-Gate' },
-                    { id: 'VAX_V4', name: '疫苗数据可信化处理', goal: '实现疫苗数据可信化存储与追溯', gate: 'L2-Gate' },
-                    { id: 'VAX_V5', name: '疫苗数据服务交付', goal: '完成数据服务交付，获取企业回执', gate: 'L1-Gate' }
+                    { id: 'VAX_V1', name: '药品数据需求分析', goal: '理解药品企业数据服务需求，形成解决方案', gate: 'L1-Gate' },
+                    { id: 'VAX_V2', name: '药品数据平台设计', goal: '设计可信数据服务平台架构', gate: 'L1-Gate' },
+                    { id: 'VAX_V3', name: '药品数据平台开发', goal: '完成数据平台开发与部署', gate: 'L2-Gate' },
+                    { id: 'VAX_V4', name: '药品数据可信化处理', goal: '实现药品数据可信化存储与追溯', gate: 'L2-Gate' },
+                    { id: 'VAX_V5', name: '药品数据服务交付', goal: '完成数据服务交付，获取企业回执', gate: 'L1-Gate' }
                 ]
             }
         ];
@@ -2553,142 +3057,188 @@
                     gate: '上级评审通过'
                 },
                 evidence: {
-                    I: ['用户访谈记录', '问卷数据', '竞品分析报告'],
-                    P: null,
-                    R: ['需求调研报告', '用户画像', '问题清单'],
+                    I: ['用户访谈记录', '问卷数据'],
+                    R: ['需求调研报告', '用户画像'],
                     V: ['上级评审签字']
                 }
             },
             {
                 id: 'PM_002',
-                name: '需求分析',
+                name: '需求调研与挖掘',
                 stageId: 'STAGE_01',
                 stageName: '需求定义',
                 roleId: 'PM',
                 roleName: '产品方案规划岗',
                 riskLevel: 'R2',
-                goal: '将调研结果转化为可执行的产品需求',
-                inputs: ['需求调研报告(PM_001)', '业务规则约束'],
-                outputs: ['需求分析文档', '优先级排序表', '功能清单'],
+                goal: '深入理解用户需求，收集并整理用户反馈，形成完整的需求池',
+                inputs: ['用户访谈记录', '问卷数据', '客服工单', '用户行为数据'],
+                outputs: ['需求调研报告', '用户画像', '需求池文档'],
                 executor: {
-                    primary: '产品方案规划岗（碳基主导）',
-                    secondary: 'AI需求分析助手（硅基辅助）'
+                    primary: '产品经理（碳基主导）',
+                    secondary: 'AI访谈分析Agent、AI需求归类Agent、AI用户画像生成Agent（硅基）'
                 },
                 aiConfig: {
-                    agentType: 'AI需求分析助手（KANO/MoSCoW分类）',
-                    usage: '输入痛点清单和业务规则，AI自动完成需求分类和优先级评分',
-                    supervision: 'AI输出的优先级评分须附计算依据；产品方案规划岗复核确认评分合理性；重要需求人工决策'
+                    agentType: 'AI需求分析助手',
+                    usage: '① 导入访谈录音和问卷数据；② AI自动转录和分析；③ 生成结构化需求报告',
+                    supervision: 'AI分析结果须产品经理人工复核；每条需求须标注来源',
+                   上岗阶段: '优先上岗',
+                   权限边界: '读取用户数据、生成分析报告',
+                   结果边界: '需求调研报告、用户画像',
+                   风险边界: 'R2中风险，AI分析+人工确认'
                 },
                 quality: {
-                    requirements: ['需求分类覆盖率100%', '优先级量化评分', '功能清单含编号/名称/优先级/来源'],
-                    sla: '小型1-3天 / 中型3-5天 / 大型5-8天',
-                    gate: '需求追溯链路完整'
+                    requirements: ['调研报告含背景/方法/发现/结论四章节', '用户画像≥3类', '需求来源100%可追溯'],
+                    sla: '小型项目3天/中型5天/大型7天',
+                    gate: 'L2-Gate：调研报告经部门负责人评审通过'
                 },
                 evidence: {
-                    I: ['需求调研报告（PM_001输出）', '业务规则约束'],
-                    P: null,
-                    R: ['需求分析文档', '优先级排序表', '功能清单'],
-                    V: ['需求追溯确认']
+                    I: ['访谈录音', '问卷数据'],
+                    R: ['调研报告', '用户画像'],
+                    V: ['产品经理审核确认']
                 }
             },
             {
                 id: 'PM_003',
+                name: '需求分析与优先级排序',
+                stageId: 'STAGE_01',
+                stageName: '需求定义',
+                roleId: 'PM',
+                roleName: '产品方案规划岗',
+                riskLevel: 'R2',
+                goal: '将调研结果转化为可执行的产品需求，完成需求分类和优先级排序',
+                inputs: ['需求调研报告（来自PM-02）', '业务规则', '技术约束'],
+                outputs: ['需求分析文档', 'MoSCoW优先级排序表', '功能清单'],
+                executor: {
+                    primary: '产品经理（硅基主导）',
+                    secondary: 'AI需求分类Agent、AI优先级评估Agent（硅基）'
+                },
+                aiConfig: {
+                    agentType: 'AI需求分析助手',
+                    usage: '① 输入痛点清单和业务规则；② AI自动完成分类和评分；③ 生成优先级排序表',
+                    supervision: 'AI输出的优先级评分须附计算依据；产品经理复核确认',
+                   上岗阶段: '逐步引入',
+                   权限边界: '读取需求数据、生成评估报告',
+                   结果边界: '需求分类表、优先级排序表',
+                   风险边界: 'R2中风险，AI评估+人工复核'
+                },
+                quality: {
+                    requirements: ['需求分类覆盖率100%', '优先级量化评分≥80%准确', '每条需求可追溯到用户痛点'],
+                    sla: '小型项目2天/中型3天/大型5天',
+                    gate: 'L2-Gate：需求分析文档经评审确认，追溯链路完整'
+                },
+                evidence: {
+                    I: ['调研报告', '业务规则'],
+                    R: ['需求分析文档', '优先级表'],
+                    V: ['评审确认记录']
+                }
+            },
+            {
+                id: 'PM_004',
                 name: 'PRD文档编写',
                 stageId: 'STAGE_01',
                 stageName: '需求定义',
                 roleId: 'PM',
                 roleName: '产品方案规划岗',
                 riskLevel: 'R2',
-                goal: '编写完整的产品需求文档',
-                inputs: ['需求分析文档(PM_002)', '竞品参考'],
-                outputs: ['PRD文档', '流程图', '原型链接', '验收标准'],
+                goal: '编写完整的产品需求文档，明确功能规格、业务流程、验收标准',
+                inputs: ['需求分析文档（来自PM-03）', '竞品参考', '技术可行性评估'],
+                outputs: ['PRD文档（含功能描述、流程图、原型链接、Given-When-Then验收标准）'],
                 executor: {
-                    primary: '产品方案规划岗（碳基主导）',
-                    secondary: 'AI PRD文档助手（硅基辅助）'
+                    primary: '产品经理（硅基主导）',
+                    secondary: 'AI PRD框架生成Agent、AI Given-When-Then生成Agent、AI内容校验Agent（硅基）'
                 },
                 aiConfig: {
-                    agentType: 'AI PRD文档助手',
-                    usage: '输入需求分析文档，AI生成PRD初稿框架和Given-When-Then格式验收标准',
-                    supervision: '保留AI生成版本和人工修改版本的diff记录；产品方案规划岗全面审核修改'
+                    agentType: 'AI PRD文档生成助手',
+                    usage: '① 输入需求分析文档；② AI生成PRD初稿框架；③ 产品经理填充详细内容；④ AI校验完整性',
+                    supervision: '保留AI生成版本和人工修改版本的diff记录；验收标准须产品经理人工确认',
+                   上岗阶段: '优先上岗',
+                   权限边界: '读取需求文档、生成PRD框架',
+                   结果边界: 'PRD初稿、验收标准清单',
+                   风险边界: 'R2中风险，AI生成初稿+人工完善+审核'
                 },
                 quality: {
-                    requirements: ['含概述/用户故事/功能规格/验收标准章节', '验收标准Given-When-Then格式覆盖异常边界', '流程图用泳道图/BPMN符号'],
-                    sla: '小型2-4天 / 中型4-7天 / 大型7-12天',
-                    gate: 'PRD经上级评审'
+                    requirements: ['含概述/用户故事/功能规格/业务流程/验收标准章节', 'Given-When-Then覆盖正常/异常/边界场景'],
+                    sla: '小型项目5天/中型7天/大型10天',
+                    gate: 'L2-Gate：PRD经上级评审，验收标准完整无遗漏'
                 },
                 evidence: {
-                    I: ['需求分析文档（PM_002输出）', '竞品参考'],
-                    P: ['diff对比记录（人工修改证据）'],
-                    R: ['PRD文档', '流程图', '验收标准（GWT格式）'],
-                    V: ['PRD评审签字']
+                    I: ['需求分析文档', '竞品参考'],
+                    R: ['PRD定稿'],
+                    V: ['PRD评审通过记录']
                 }
             },
             {
-                id: 'PM_004',
-                name: '原型设计',
+                id: 'PM_005',
+                name: '原型设计与评审',
                 stageId: 'STAGE_01',
                 stageName: '需求定义',
                 roleId: 'PM',
                 roleName: '产品方案规划岗',
                 riskLevel: 'R1',
-                goal: '完成产品交互原型设计',
-                inputs: ['PRD文档(PM_003)', 'UI设计规范'],
-                outputs: ['交互原型图', '页面流程图', '交互说明'],
+                goal: '完成产品交互原型设计，验证功能逻辑闭环，获得评审通过',
+                inputs: ['PRD文档（来自PM-04）', 'UI设计规范'],
+                outputs: ['交互原型图', '页面流程图', '交互说明文档'],
                 executor: {
-                    primary: '产品方案规划岗（碳基）',
-                    secondary: 'AI原型辅助工具（硅基）'
+                    primary: '产品经理（硅基主导）+ UI设计师（协作）',
+                    secondary: 'AI原型辅助生成Agent（硅基）'
                 },
                 aiConfig: {
-                    agentType: 'AI原型辅助工具',
-                    usage: '输入PRD和设计规范，AI提供布局建议和交互方案',
-                    supervision: 'AI建议经产品方案规划岗审核；重要交互逻辑人工验证'
+                    agentType: 'AI 原型布局建议助手',
+                    usage: '① 输入PRD文档和设计规范；② AI提供布局建议；③ 人工选择调整；④ AI评审逻辑闭环',
+                    supervision: 'AI建议须产品经理审核；原型须通过评审会议',
+                   上岗阶段: '理解类优先上岗，判断类逐步引入',
+                   权限边界: '读取PRD、生成布局建议',
+                   结果边界: '原型设计建议、逻辑检查报告',
+                   风险边界: 'R1低风险，AI建议+人工决策'
                 },
                 quality: {
-                    requirements: ['覆盖率100%', '关键页面4种状态完整', '跳转逻辑清晰'],
-                    sla: '小型1-3天 / 中型3-5天 / 大型5-10天',
-                    gate: '通过可用性自查'
+                    requirements: ['原型覆盖率100%', '关键页面4种状态完整', '跳转逻辑闭环无断点'],
+                    sla: '小型项目3天/中型4天/大型7天',
+                    gate: 'L1-Gate：通过原型评审会议，各方签字确认'
                 },
                 evidence: {
-                    I: ['PRD文档（PM_003输出）', 'UI设计规范'],
-                    P: null,
-                    R: ['交互原型图', '页面流程图'],
-                    V: ['可用性自查通过']
-                }
-            },
-            {
-                id: 'PM_005',
-                name: '需求评审',
-                stageId: 'STAGE_01',
-                stageName: '需求定义',
-                roleId: 'PM',
-                roleName: '产品方案规划岗',
-                riskLevel: 'R3',
-                goal: '组织评审会议，确认需求可执行性',
-                inputs: ['PRD文档', '原型设计', '技术可行性评估'],
-                outputs: ['评审会议纪要', '需求确认清单'],
-                executor: {
-                    primary: '产品方案规划岗（主持）',
-                    secondary: '研发/设计/测试（参与）'
-                },
-                aiConfig: {
-                    agentType: 'AI评审辅助工具',
-                    usage: '输入会议音频转文本或讨论内容，AI自动生成结构化会议纪要',
-                    supervision: 'AI生成的纪要须准确反映各方意见；产品方案规划岗审核确认'
-                },
-                quality: {
-                    requirements: ['含时间/参会人/讨论结论/遗留问题', '需求确认状态明确', '各方签字完成'],
-                    sla: '小型0.5-1天 / 中型1-2天 / 大型2-3天',
-                    gate: '通过率100%或遗留问题有跟进计划'
-                },
-                evidence: {
-                    I: ['PRD文档', '原型设计', '技术可行性评估'],
-                    P: null,
-                    R: ['评审会议纪要', '需求确认清单'],
-                    V: ['各方签字确认（PM+研发+设计+测试）']
+                    I: ['PRD文档', '设计规范'],
+                    R: ['原型文件'],
+                    V: ['原型评审通过记录']
                 }
             },
             {
                 id: 'PM_006',
+                name: '需求评审与确认',
+                stageId: 'STAGE_01',
+                stageName: '需求定义',
+                roleId: 'PM',
+                roleName: '产品方案规划岗',
+                riskLevel: 'R2',
+                goal: '组织评审会议，确认需求可执行性，收集各方意见并达成共识',
+                inputs: ['PRD文档', '原型设计', '技术可行性评估'],
+                outputs: ['评审会议纪要', '需求确认清单', '遗留问题跟踪表'],
+                executor: {
+                    primary: '产品经理（主持）+ 研发/设计/测试（参与）',
+                    secondary: 'AI会议纪要生成Agent（硅基）'
+                },
+                aiConfig: {
+                    agentType: 'AI 评审会议纪要助手',
+                    usage: '① 输入评审材料；② AI生成检查清单；③ 会议讨论；④ AI自动生成纪要',
+                    supervision: 'AI生成的纪要须准确反映各方意见；产品经理审核确认',
+                   上岗阶段: '理解类优先上岗，执行类成熟后上岗',
+                   权限边界: '读取评审材料、生成会议纪要',
+                   结果边界: '评审纪要、遗留问题表',
+                   风险边界: 'R2中风险，AI生成+人工确认'
+                },
+                quality: {
+                    requirements: ['会议纪要含时间/参会人/讨论结论/遗留问题四要素', '需求确认状态明确', '各方签字完成'],
+                    sla: '小型项目1天/中型1.5天/大型2天',
+                    gate: 'L2-Gate：通过率100%或遗留问题有明确跟进计划'
+                },
+                evidence: {
+                    I: ['PRD文档', '原型', '技术评估'],
+                    R: ['会议纪要'],
+                    V: ['各方签字确认']
+                }
+            },
+            {
+                id: 'PM_008',
                 name: '需求变更管理',
                 stageId: 'STAGE_01',
                 stageName: '需求定义',
@@ -2696,59 +3246,65 @@
                 roleName: '产品方案规划岗',
                 riskLevel: 'R3',
                 goal: '规范管理项目过程中的需求变更，评估变更影响，确保变更可控',
-                inputs: ['变更申请表', '原PRD文档', '开发进度报告'],
+                inputs: ['变更申请表', '原PRD文档（来自PM-04）', '当前开发进度报告'],
                 outputs: ['变更评估报告', '变更审批记录', '更新后的PRD文档'],
                 executor: {
-                    primary: '产品方案规划岗（碳基主导）',
-                    secondary: 'AI变更分析助手（硅基辅助）'
+                    primary: '产品经理（碳基主导）',
+                    secondary: 'AI变更影响分析Agent、AI工作量估算Agent（硅基）'
                 },
                 aiConfig: {
-                    agentType: 'AI变更分析助手',
-                    usage: '输入变更内容和原PRD，AI自动分析影响范围（涉及模块/工时/进度/风险），生成变更评估报告',
-                    supervision: 'AI评估须经产品方案规划岗复核；重大变更须多方会签；项目经理确认进度影响'
+                    agentType: 'AI 变更影响分析助手',
+                    usage: '① 输入变更申请表和原PRD；② AI自动分析影响范围；③ 生成变更评估报告',
+                    supervision: 'AI评估须产品经理复核；重大变更须多方会签',
+                   上岗阶段: '逐步引入',
+                   权限边界: '读取PRD和进度数据、生成评估报告',
+                   结果边界: '影响分析报告、工作量估算',
+                   风险边界: 'R2中风险，AI评估+人工复核'
                 },
                 quality: {
-                    requirements: ['变更评估报告含变更内容/影响范围/工作量/进度影响/风险五要素', '通过审批的变更已更新PRD', '变更记录可追溯', '紧急变更4小时内响应'],
-                    sla: '紧急变更4小时响应；常规变更1-2天',
-                    gate: 'R3高风险；重大变更须经项目经理和部门负责人审批'
+                    requirements: ['评估含影响范围、工作量、风险三要素', '通过审批的变更已更新PRD'],
+                    sla: '紧急变更4小时/常规变更1-2天',
+                    gate: 'L3-Gate：重大变更须项目经理和部门负责人审批'
                 },
                 evidence: {
-                    I: ['变更申请表', '原PRD文档', '开发进度报告'],
-                    P: ['AI影响分析记录'],
-                    R: ['变更评估报告', '变更审批记录', '更新后的PRD文档'],
+                    I: ['变更申请表', '原PRD'],
+                    R: ['评估报告', '变更审批记录'],
                     V: ['变更审批记录']
                 }
             },
             {
-                id: 'PM_007',
-                name: '需求验收',
+                id: 'PM_010',
+                name: '用户验收',
                 stageId: 'STAGE_01',
                 stageName: '需求定义',
                 roleId: 'PM',
                 roleName: '产品方案规划岗',
                 riskLevel: 'R2',
-                goal: '对已完成开发的功能进行需求验收，确认满足验收标准',
-                inputs: ['PRD文档', '验收标准清单', '测试报告'],
-                outputs: ['需求验收确认单', '验收问题清单'],
+                goal: '协助组织用户验收测试，收集用户反馈，确保产品满足需求',
+                inputs: ['验收测试计划', 'UAT环境', '用户测试用例'],
+                outputs: ['UAT测试报告', '用户反馈汇总', '验收签字确认单'],
                 executor: {
-                    primary: '产品方案规划岗（碳基主导）',
-                    secondary: '测试工程师（协助）'
+                    primary: '产品经理（碳基主导）+ 用户代表',
+                    secondary: 'AI验收问题汇总Agent、AI验收报告生成Agent（硅基）'
                 },
                 aiConfig: {
-                    agentType: 'AI验收辅助工具',
-                    usage: '输入PRD和验收标准清单，AI生成验收检查清单，辅助记录验收结果',
-                    supervision: 'AI生成的检查清单需产品方案规划岗确认；验收结论以产品方案规划岗人工判断为准；验收确认单需签字'
+                    agentType: 'AI验收辅助',
+                    usage: '① 收集验收过程记录；② AI自动汇总问题和建议；③ 生成验收报告',
+                    supervision: '报告须产品经理和用户双方确认',
+                   上岗阶段: '执行类成熟后上岗',
+                   权限边界: '读取验收记录、生成报告',
+                   结果边界: '验收问题汇总、验收报告',
+                   风险边界: 'R2中风险，AI生成+双方确认'
                 },
                 quality: {
-                    requirements: ['验收检查覆盖率100%', 'P0/P1级需求全部通过', '验收确认单含产品方案规划岗签字', '验收问题清单完整'],
-                    sla: '标准时长1个工作日',
-                    gate: 'R2中风险；产品方案规划岗签字确认后方可触发上线'
+                    requirements: ['验收覆盖率100%', 'P0级问题全部解决', '用户签字确认'],
+                    sla: '标准时长3天',
+                    gate: 'L2-Gate：用户验收通过签字确认'
                 },
                 evidence: {
-                    I: ['PRD文档', '验收标准清单', '测试报告'],
-                    P: ['AI验收检查清单'],
-                    R: ['需求验收确认单', '验收问题清单'],
-                    V: ['产品方案规划岗签字确认']
+                    I: ['验收计划', '测试记录'],
+                    R: ['验收报告'],
+                    V: ['用户签字确认']
                 }
             },
             // UI设计阶段 - 8个节点
@@ -2779,7 +3335,6 @@
                 },
                 evidence: {
                     I: ['PRD文档', '原始需求', '竞品参考'],
-                    P: ['AI需求梳理过程记录'],
                     R: ['UI设计需求确认书', '设计范围与优先级清单'],
                     V: ['产品+UI双签字']
                 }
@@ -2811,7 +3366,6 @@
                 },
                 evidence: {
                     I: ['设计需求确认书', '企业VI规范', '技术约束'],
-                    P: ['规范定义推理过程', '参数校准记录'],
                     R: ['UI设计规范手册', 'Design Token JSON'],
                     V: ['UI与前端负责人审批确认']
                 }
@@ -2843,7 +3397,6 @@
                 },
                 evidence: {
                     I: ['需求确认书', '设计规范', '功能流程图'],
-                    P: ['AI原型生成推理过程', '布局逻辑说明'],
                     R: ['低保真线框图', '可交互原型链接', '页面信息层级说明'],
                     V: ['UI负责人审核确认']
                 }
@@ -2875,7 +3428,6 @@
                 },
                 evidence: {
                     I: ['低保真原型', '设计规范', '需求确认书'],
-                    P: ['AI设计推理过程', '碳基修改迭代记录'],
                     R: ['全页面高保真设计稿', '设计变体方案', '视觉设计说明'],
                     V: ['UI负责人Approve', '产品方案规划岗需求匹配确认']
                 }
@@ -2907,7 +3459,6 @@
                 },
                 evidence: {
                     I: ['设计稿', '设计规范', '前端技术规范'],
-                    P: ['AI组件拆解推理过程', '标准化迭代记录'],
                     R: ['标准化UI组件库', '组件属性与状态定义文档', '组件库开发适配JSON'],
                     V: ['UI与前端负责人双确认']
                 }
@@ -2939,7 +3490,6 @@
                 },
                 evidence: {
                     I: ['设计稿', '组件库', '操作流程', '技术约束'],
-                    P: ['AI动效设计推理过程', '交互校验记录'],
                     R: ['交互逻辑说明文档', '动效设计稿与可交互演示', '动效参数配置JSON'],
                     V: ['UI与前端负责人双确认']
                 }
@@ -2971,7 +3521,6 @@
                 },
                 evidence: {
                     I: ['设计全量产出文件', '设计规范', '合规要求'],
-                    P: ['AI校验全流程日志', '风险识别推理过程'],
                     R: ['设计全维度校验报告', '设计风险点与优化建议清单'],
                     V: ['三方负责人校验通过确认']
                 }
@@ -3003,7 +3552,6 @@
                 },
                 evidence: {
                     I: ['需求确认书', '终版设计文件', '校验报告'],
-                    P: ['AI切图标注过程记录', '物料打包日志'],
                     R: ['全量设计交付物料包', '开发适配JSON参数包'],
                     V: ['三方验收签字确认书']
                 }
@@ -3021,8 +3569,8 @@
                 inputs: ['PRD文档', '产品原型', '品牌规范', '前端技术栈要求', '业务流程图'],
                 outputs: ['评审意见记录表', '前端需求疑问澄清文档', '需求边界确认清单'],
                 executor: {
-                    primary: 'AI交互工程师（碳基主导）',
-                    secondary: 'AI评审辅助工具（硅基辅助）'
+                    primary: 'AI交互工程师（碳基辅助）',
+                    secondary: 'AI评审辅助工具（硅基主导）'
                 },
                 aiConfig: {
                     agentType: 'AI评审辅助工具',
@@ -3036,7 +3584,6 @@
                 },
                 evidence: {
                     I: ['PRD文档', '产品原型', '品牌规范'],
-                    P: ['AI评审记录'],
                     R: ['评审意见记录表', '需求疑问澄清文档', '需求边界确认清单'],
                     V: ['前端负责人签字确认']
                 }
@@ -3053,8 +3600,8 @@
                 inputs: ['评审后PRD', '产品原型', '品牌规范', '前端技术栈要求', '项目规模及性能需求'],
                 outputs: ['前端框架选型说明', '详细技术方案', '组件拆分清单', '兼容性适配方案'],
                 executor: {
-                    primary: 'AI交互工程师（碳基主导）',
-                    secondary: 'AI技术方案助手（硅基辅助）'
+                    primary: 'AI交互工程师（碳基辅助）',
+                    secondary: 'AI技术方案助手（硅基主导）'
                 },
                 aiConfig: {
                     agentType: 'AI技术方案助手',
@@ -3068,7 +3615,6 @@
                 },
                 evidence: {
                     I: ['评审后PRD', '产品原型', '品牌规范', '技术栈要求'],
-                    P: ['AI技术方案记录'],
                     R: ['框架选型说明', '详细技术方案', '组件拆分清单'],
                     V: ['前端负责人审批']
                 }
@@ -3085,8 +3631,8 @@
                 inputs: ['前端技术方案', '组件拆分清单', 'UI设计稿', '接口文档'],
                 outputs: ['前端开发代码', '本地可运行项目包', '开发日志'],
                 executor: {
-                    primary: 'AI交互工程师（碳基主导）',
-                    secondary: 'AI代码助手（硅基辅助）'
+                    primary: 'AI交互工程师（碳基辅助）',
+                    secondary: 'AI代码助手（硅基主导）'
                 },
                 aiConfig: {
                     agentType: 'AI代码助手',
@@ -3100,8 +3646,7 @@
                 },
                 evidence: {
                     I: ['技术方案', '组件拆分清单', 'UI设计稿', '接口文档'],
-                    P: ['AI代码生成记录'],
-                    R: ['前端源代码', '本地可运行项目包', '开发日志'],
+                    R: ['前端源代码', '本地可运行项目包'],
                     V: ['代码提交记录']
                 }
             },
@@ -3117,8 +3662,8 @@
                 inputs: ['前端开发代码', 'UI设计稿', '需求边界确认清单'],
                 outputs: ['前端自测报告', 'bug修复清单', '兼容性质检报告'],
                 executor: {
-                    primary: 'AI交互工程师（碳基主导）',
-                    secondary: 'AI测试用例助手（硅基辅助）'
+                    primary: 'AI交互工程师（碳基辅助）',
+                    secondary: 'AI测试用例助手（硅基主导）'
                 },
                 aiConfig: {
                     agentType: 'AI测试用例助手',
@@ -3132,7 +3677,6 @@
                 },
                 evidence: {
                     I: ['前端开发代码', 'UI设计稿', '需求边界确认清单'],
-                    P: ['AI测试用例记录'],
                     R: ['前端自测报告', 'bug修复清单', '兼容性质检报告'],
                     V: ['前端负责人审批']
                 }
@@ -3149,8 +3693,8 @@
                 inputs: ['前端自测后代码', '后端接口服务', '接口文档', '自测报告'],
                 outputs: ['联调问题记录表', '联调修复报告', '接口适配优化说明'],
                 executor: {
-                    primary: 'AI交互工程师（碳基主导）',
-                    secondary: 'AI联调辅助（硅基辅助）'
+                    primary: 'AI交互工程师（碳基辅助）',
+                    secondary: 'AI联调辅助（硅基主导）'
                 },
                 aiConfig: {
                     agentType: 'AI联调辅助',
@@ -3164,7 +3708,6 @@
                 },
                 evidence: {
                     I: ['前端自测后代码', '后端接口服务', '接口文档', '自测报告'],
-                    P: ['AI联调辅助记录'],
                     R: ['联调问题记录表', '联调修复报告', '接口适配优化说明'],
                     V: ['前后端负责人双确认']
                 }
@@ -3181,8 +3724,8 @@
                 inputs: ['联调优化后前端代码', '自测报告', '联调修复报告', '部署规范文档'],
                 outputs: ['前端打包文件', '部署操作手册', '部署验证报告'],
                 executor: {
-                    primary: 'AI交互工程师（碳基主导）',
-                    secondary: 'AI发布辅助（硅基辅助）'
+                    primary: 'AI交互工程师（碳基辅助）',
+                    secondary: 'AI发布辅助（硅基主导）'
                 },
                 aiConfig: {
                     agentType: 'AI发布辅助',
@@ -3196,7 +3739,6 @@
                 },
                 evidence: {
                     I: ['联调优化后代码', '自测报告', '联调修复报告', '部署规范文档'],
-                    P: ['AI发布辅助记录'],
                     R: ['前端打包文件', '部署操作手册', '部署验证报告'],
                     V: ['前端负责人+运维人员双确认']
                 }
@@ -3214,8 +3756,8 @@
                 inputs: ['PRD文档', '产品原型', '业务流程图', '数据库设计规范', '后端技术栈要求', 'AI能力需求', '国产化适配要求'],
                 outputs: ['评审意见记录表', '后端需求疑问澄清文档', '业务逻辑梳理图'],
                 executor: {
-                    primary: 'AI后端工程师（碳基主导）',
-                    secondary: 'AI评审辅助工具（硅基辅助）'
+                    primary: 'AI后端工程师（碳基辅助）',
+                    secondary: 'AI评审辅助工具（硅基主导）'
                 },
                 aiConfig: {
                     agentType: 'AI评审辅助工具',
@@ -3229,7 +3771,6 @@
                 },
                 evidence: {
                     I: ['PRD文档', '产品原型', '业务流程图', '技术栈要求'],
-                    P: ['AI评审记录'],
                     R: ['评审意见记录表', '需求疑问澄清文档', '业务逻辑梳理图'],
                     V: ['后端负责人签字确认']
                 }
@@ -3246,8 +3787,8 @@
                 inputs: ['评审后PRD', '业务逻辑梳理图', '后端技术栈要求', '性能指标要求', '数据库设计规范', 'AI服务需求', '国产化适配要求'],
                 outputs: ['后端详细技术方案', '数据库设计文档', '接口设计文档', '权限设计方案'],
                 executor: {
-                    primary: 'AI后端工程师（碳基主导）',
-                    secondary: 'AI技术方案助手（硅基辅助）'
+                    primary: 'AI后端工程师（碳基辅助）',
+                    secondary: 'AI技术方案助手（硅基主导）'
                 },
                 aiConfig: {
                     agentType: 'AI技术方案助手',
@@ -3261,7 +3802,6 @@
                 },
                 evidence: {
                     I: ['评审后PRD', '业务逻辑梳理图', '技术栈要求', '性能指标'],
-                    P: ['AI技术方案记录'],
                     R: ['后端详细技术方案', '数据库设计文档', '接口设计文档', '权限设计方案'],
                     V: ['后端负责人+架构师双审批']
                 }
@@ -3278,8 +3818,8 @@
                 inputs: ['后端技术方案', '数据库设计文档', '接口设计文档', '权限设计方案', '国产化适配要求'],
                 outputs: ['后端开发代码', '数据库脚本', '中间件配置文档', 'AI服务调用封装代码', '开发日志'],
                 executor: {
-                    primary: 'AI后端工程师（碳基主导）',
-                    secondary: 'AI代码助手（硅基辅助）'
+                    primary: 'AI后端工程师（碳基辅助）',
+                    secondary: 'AI代码助手（硅基主导）'
                 },
                 aiConfig: {
                     agentType: 'AI代码助手',
@@ -3293,8 +3833,7 @@
                 },
                 evidence: {
                     I: ['后端技术方案', '数据库设计文档', '接口设计文档', '权限设计方案', '国产化要求'],
-                    P: ['AI代码生成记录'],
-                    R: ['后端源代码', '数据库脚本', '中间件配置文档', 'AI服务调用封装代码', '开发日志'],
+                    R: ['后端源代码', '数据库脚本', '中间件配置文档', 'AI服务调用封装代码'],
                     V: ['代码提交记录']
                 }
             },
@@ -3310,8 +3849,8 @@
                 inputs: ['后端开发代码', '数据库脚本', '接口设计文档', '性能指标要求', 'AI服务测试用例'],
                 outputs: ['后端自测报告', '性能测试报告', 'bug修复清单', '优化记录'],
                 executor: {
-                    primary: 'AI后端工程师（碳基主导）',
-                    secondary: 'AI性能测试助手（硅基辅助）'
+                    primary: 'AI后端工程师（碳基辅助）',
+                    secondary: 'AI性能测试助手（硅基主导）'
                 },
                 aiConfig: {
                     agentType: 'AI性能测试助手',
@@ -3325,7 +3864,6 @@
                 },
                 evidence: {
                     I: ['后端开发代码', '数据库脚本', '接口设计文档', '性能指标'],
-                    P: ['AI性能测试记录'],
                     R: ['后端自测报告', '性能测试报告', 'bug修复清单', '优化记录'],
                     V: ['后端负责人审批']
                 }
@@ -3342,8 +3880,8 @@
                 inputs: ['后端自测优化后代码', '接口文档', '前端自测报告', 'AI服务测试环境', '国产化测试环境'],
                 outputs: ['联调问题记录表', '联调修复报告', '接口优化说明'],
                 executor: {
-                    primary: 'AI后端工程师（碳基主导）',
-                    secondary: 'AI联调辅助（硅基辅助）'
+                    primary: 'AI后端工程师（碳基辅助）',
+                    secondary: 'AI联调辅助（硅基主导）'
                 },
                 aiConfig: {
                     agentType: 'AI联调辅助',
@@ -3357,8 +3895,7 @@
                 },
                 evidence: {
                     I: ['后端自测优化后代码', '接口文档', '前端自测报告', '国产化测试环境'],
-                    P: ['AI联调辅助记录'],
-                    R: ['联调问题记录表', '联调修复报告', '接口优化说明'],
+                    R: ['接口优化说明'],
                     V: ['前后端负责人双确认']
                 }
             },
@@ -3374,8 +3911,8 @@
                 inputs: ['联调优化后后端代码', '数据库脚本', '自测报告', '联调修复报告', '部署规范文档', '国产化部署要求'],
                 outputs: ['后端打包文件', '数据库部署脚本', '部署操作手册', '部署验证报告'],
                 executor: {
-                    primary: 'AI后端工程师（碳基主导）',
-                    secondary: 'AI发布辅助（硅基辅助）'
+                    primary: 'AI后端工程师（碳基辅助）',
+                    secondary: 'AI发布辅助（硅基主导）'
                 },
                 aiConfig: {
                     agentType: 'AI发布辅助',
@@ -3388,42 +3925,40 @@
                     gate: 'R2中风险；后端负责人+运维人员双确认'
                 },
                 evidence: {
-                    I: ['联调优化后代码', '数据库脚本', '自测报告', '联调修复报告', '部署规范文档', '国产化要求'],
-                    P: ['AI部署辅助记录'],
-                    R: ['后端打包文件', '数据库部署脚本', '部署操作手册', '部署验证报告'],
+                    I: ['联调优化后代码', '数据库脚本', '部署规范文档', '国产化要求'],
+                    R: ['后端打包文件', '数据库部署脚本', '部署操作手册'],
                     V: ['后端负责人+运维人员双确认']
                 }
             },
             // AI交互工程师(TDG)阶段 - 6个节点
             {
                 id: 'TDG-AIIE_001',
-                name: '疫苗数据平台需求评审',
+                name: 'TDG数据平台需求评审',
                 stageId: 'STAGE_01',
                 stageName: '需求定义',
                 roleId: 'TDG-AIIE',
                 roleName: 'AI交互工程师(TDG)',
                 riskLevel: 'R2',
-                goal: '参与疫苗数据平台PRD与原型评审，聚焦疫苗数据展示与追溯交互需求，梳理数据流向与可视化逻辑',
-                inputs: ['疫苗数据平台PRD', '产品原型', '数据追溯流程图', '可视化规范', '疫苗企业UI要求'],
+                goal: '参与数据平台PRD与原型评审，聚焦药品数据展示与追溯交互需求，梳理数据流向与可视化逻辑',
+                inputs: ['药品数据平台PRD', '产品原型', '数据追溯流程图', '可视化规范', '药品企业UI要求'],
                 outputs: ['评审意见记录表', '数据展示需求澄清文档', '交互边界确认清单'],
                 executor: {
-                    primary: 'AI交互工程师（碳基主导）',
-                    secondary: 'AI评审辅助工具（硅基辅助）'
+                    primary: 'AI交互工程师（碳基辅助）',
+                    secondary: 'AI评审辅助工具（硅基主导）'
                 },
                 aiConfig: {
                     agentType: 'AI评审辅助工具',
-                    usage: '用于评审会议纪要生成、疫苗数据展示建议提取',
-                    supervision: 'AI生成的纪要须准确反映各方意见；疫苗数据交互工程师审核确认'
+                    usage: '用于评审会议纪要生成、药品数据展示建议提取',
+                    supervision: 'AI生成的纪要须准确反映各方意见；药品数据交互工程师审核确认'
                 },
                 quality: {
-                    requirements: ['明确疫苗数据展示需求和追溯逻辑', '数据可视化方案符合行业规范', '无需求歧义'],
+                    requirements: ['明确药品数据展示需求和追溯逻辑', '数据可视化方案符合行业规范', '无需求歧义'],
                     sla: '1个工作日内完成',
                     gate: 'R2中风险；前端负责人签字确认，同步产品、数据团队'
                 },
                 evidence: {
-                    I: ['疫苗数据平台PRD', '产品原型', '数据追溯流程图'],
-                    P: ['AI评审记录'],
-                    R: ['评审意见记录表', '数据展示需求澄清文档', '交互边界确认清单'],
+                    I: ['药品数据平台PRD', '产品原型', '数据追溯流程图'],
+                    R: ['评审意见记录表', '交互边界确认清单'],
                     V: ['前端负责人签字确认']
                 }
             },
@@ -3435,12 +3970,12 @@
                 roleId: 'TDG-AIIE',
                 roleName: 'AI交互工程师(TDG)',
                 riskLevel: 'R2',
-                goal: '设计疫苗数据可视化前端架构，选择适配的数据图表组件库，拆分可复用组件，制定疫苗数据展示策略',
-                inputs: ['评审后PRD', '产品原型', '疫苗数据规范', '可视化组件要求', '性能需求'],
+                goal: '设计药品数据可视化前端架构，选择适配的数据图表组件库，拆分可复用组件，制定药品数据展示策略',
+                inputs: ['评审后PRD', '产品原型', '药品数据规范', '可视化组件要求', '性能需求'],
                 outputs: ['前端框架选型说明', '数据可视化技术方案', '组件拆分清单', '图表配置方案'],
                 executor: {
-                    primary: 'AI交互工程师（碳基主导）',
-                    secondary: 'AI技术方案助手（硅基辅助）'
+                    primary: 'AI交互工程师（碳基辅助）',
+                    secondary: 'AI技术方案助手（硅基主导）'
                 },
                 aiConfig: {
                     agentType: 'AI技术方案助手',
@@ -3448,31 +3983,30 @@
                     supervision: 'AI方案须经前端负责人审核确认'
                 },
                 quality: {
-                    requirements: ['可视化方案贴合疫苗数据类型', '图表选型合理、展示直观', '组件拆分合理、复用性强'],
+                    requirements: ['可视化方案贴合药品数据类型', '图表选型合理、展示直观', '组件拆分合理、复用性强'],
                     sla: '1个工作日内完成',
                     gate: 'R2中风险；前端负责人审批，同步数据团队确认接口适配性'
                 },
                 evidence: {
-                    I: ['评审后PRD', '产品原型', '疫苗数据规范'],
-                    P: ['AI技术方案记录'],
+                    I: ['评审后PRD', '产品原型', '药品数据规范'],
                     R: ['前端框架选型说明', '数据可视化技术方案', '组件拆分清单'],
                     V: ['前端负责人审批']
                 }
             },
             {
                 id: 'TDG-AIIE_003',
-                name: '疫苗数据可视化开发',
+                name: '药品数据可视化开发',
                 stageId: 'STAGE_03',
                 stageName: '研发开发',
                 roleId: 'TDG-AIIE',
                 roleName: 'AI交互工程师(TDG)',
                 riskLevel: 'R2',
-                goal: '按照数据可视化技术方案，开发疫苗数据展示页面，实现数据图表、追溯链路、可信度展示等交互功能',
+                goal: '按照数据可视化技术方案，开发药品数据展示页面，实现数据图表、追溯链路、可信度展示等交互功能',
                 inputs: ['数据可视化技术方案', '组件拆分清单', '图表配置方案', '数据接口文档'],
                 outputs: ['数据可视化前端代码', '本地可运行项目包', '开发日志'],
                 executor: {
-                    primary: 'AI交互工程师（碳基主导）',
-                    secondary: 'AI代码助手（硅基辅助）'
+                    primary: 'AI交互工程师（碳基辅助）',
+                    secondary: 'AI代码助手（硅基主导）'
                 },
                 aiConfig: {
                     agentType: 'AI代码助手',
@@ -3485,9 +4019,8 @@
                     gate: 'R2中风险；自我校验+前端同伴评审'
                 },
                 evidence: {
-                    I: ['技术方案', '组件拆分清单', '图表配置方案', '接口文档'],
-                    P: ['AI代码生成记录'],
-                    R: ['前端源代码', '本地可运行项目包', '开发日志'],
+                    I: ['技术方案', '组件拆分清单', '接口文档'],
+                    R: ['前端源代码', '本地可运行项目包'],
                     V: ['代码提交记录']
                 }
             },
@@ -3499,12 +4032,12 @@
                 roleId: 'TDG-AIIE',
                 roleName: 'AI交互工程师(TDG)',
                 riskLevel: 'R1',
-                goal: '对照数据需求文档，开展数据展示自测，重点验证疫苗数据准确性、图表数据一致性、可信度展示正确性',
-                inputs: ['数据可视化前端代码', '疫苗数据样本', '数据准确性验证清单'],
+                goal: '对照数据需求文档，开展数据展示自测，重点验证药品数据准确性、图表数据一致性、可信度展示正确性',
+                inputs: ['数据可视化前端代码', '药品数据样本', '数据准确性验证清单'],
                 outputs: ['数据展示自测报告', '数据问题修复清单', '图表准确性校验报告'],
                 executor: {
-                    primary: 'AI交互工程师（碳基主导）',
-                    secondary: 'AI测试用例助手（硅基辅助）'
+                    primary: 'AI交互工程师（碳基辅助）',
+                    secondary: 'AI测试用例助手（硅基主导）'
                 },
                 aiConfig: {
                     agentType: 'AI测试用例助手',
@@ -3517,8 +4050,7 @@
                     gate: 'R1低风险；前端负责人审批'
                 },
                 evidence: {
-                    I: ['前端代码', '疫苗数据样本', '数据准确性验证清单'],
-                    P: ['AI测试用例记录'],
+                    I: ['前端代码', '药品数据样本', '数据准确性验证清单'],
                     R: ['数据展示自测报告', '数据问题修复清单', '图表准确性校验报告'],
                     V: ['前端负责人审批']
                 }
@@ -3531,12 +4063,12 @@
                 roleId: 'TDG-AIIE',
                 roleName: 'AI交互工程师(TDG)',
                 riskLevel: 'R2',
-                goal: '配合后端工程师开展数据接口联调，排查数据展示异常，确保疫苗数据准确展示与追溯链路顺畅',
+                goal: '配合后端工程师开展数据接口联调，排查数据展示异常，确保药品数据准确展示与追溯链路顺畅',
                 inputs: ['自测后代码', '数据接口服务', '接口文档', '数据校验报告'],
                 outputs: ['联调问题记录表', '联调修复报告', '数据对接优化说明'],
                 executor: {
-                    primary: 'AI交互工程师（碳基主导）',
-                    secondary: 'AI联调辅助（硅基辅助）'
+                    primary: 'AI交互工程师（碳基辅助）',
+                    secondary: 'AI联调辅助（硅基主导）'
                 },
                 aiConfig: {
                     agentType: 'AI联调辅助',
@@ -3550,7 +4082,6 @@
                 },
                 evidence: {
                     I: ['自测后代码', '数据接口服务', '接口文档', '数据校验报告'],
-                    P: ['AI联调辅助记录'],
                     R: ['联调问题记录表', '联调修复报告', '数据对接优化说明'],
                     V: ['前后端负责人双确认']
                 }
@@ -3567,8 +4098,8 @@
                 inputs: ['联调优化后代码', '自测报告', '联调修复报告', '数据服务部署规范'],
                 outputs: ['前端打包文件', '部署操作手册', '数据服务验证报告'],
                 executor: {
-                    primary: 'AI交互工程师（碳基主导）',
-                    secondary: 'AI发布辅助（硅基辅助）'
+                    primary: 'AI交互工程师（碳基辅助）',
+                    secondary: 'AI发布辅助（硅基主导）'
                 },
                 aiConfig: {
                     agentType: 'AI发布辅助',
@@ -3582,7 +4113,6 @@
                 },
                 evidence: {
                     I: ['联调优化后代码', '自测报告', '联调修复报告', '数据服务部署规范'],
-                    P: ['AI发布辅助记录'],
                     R: ['前端打包文件', '部署操作手册', '数据服务验证报告'],
                     V: ['前端负责人+运维人员双确认']
                 }
@@ -3590,18 +4120,18 @@
             // AI后端工程师(TDG)阶段 - 6个节点
             {
                 id: 'TDG-AIBE_001',
-                name: '疫苗数据平台需求评审',
+                name: '药品数据平台需求评审',
                 stageId: 'STAGE_01',
                 stageName: '需求定义',
                 roleId: 'TDG-AIBE',
                 roleName: 'AI后端工程师(TDG)',
                 riskLevel: 'R2',
-                goal: '参与疫苗数据平台PRD评审，聚焦数据处理、可信化存储、数据接口等后端需求，提出技术可行性建议',
-                inputs: ['疫苗数据平台PRD', '产品原型', '数据追溯需求', '可信数据规范', '接口性能要求'],
+                goal: '参与数据平台PRD评审，聚焦数据处理、可信化存储、数据接口等后端需求，提出技术可行性建议',
+                inputs: ['数据平台PRD', '产品原型', '数据追溯需求', '可信数据规范', '接口性能要求'],
                 outputs: ['评审意见记录表', '后端需求澄清文档', '技术边界确认清单'],
                 executor: {
-                    primary: 'AI后端工程师（碳基主导）',
-                    secondary: 'AI评审辅助工具（硅基辅助）'
+                    primary: 'AI后端工程师（碳基辅助）',
+                    secondary: 'AI评审辅助工具（硅基主导）'
                 },
                 aiConfig: {
                     agentType: 'AI评审辅助工具',
@@ -3614,8 +4144,7 @@
                     gate: 'R2中风险；后端负责人签字确认，同步产品、数据团队'
                 },
                 evidence: {
-                    I: ['疫苗数据平台PRD', '产品原型', '数据追溯需求'],
-                    P: ['AI评审记录'],
+                    I: ['数据平台PRD', '产品原型', '数据追溯需求'],
                     R: ['评审意见记录表', '后端需求澄清文档', '技术边界确认清单'],
                     V: ['后端负责人签字确认']
                 }
@@ -3628,12 +4157,12 @@
                 roleId: 'TDG-AIBE',
                 roleName: 'AI后端工程师(TDG)',
                 riskLevel: 'R2',
-                goal: '设计疫苗数据服务架构，选择适配的技术栈，拆分数据处理模块，制定数据可信化存储策略',
+                goal: '设计药品数据服务架构，选择适配的技术栈，拆分数据处理模块，制定数据可信化存储策略',
                 inputs: ['评审后PRD', '产品原型', '数据可信化规范', '性能要求', '数据量预估'],
                 outputs: ['后端架构设计文档', '数据服务技术方案', '模块拆分清单', '数据存储方案'],
                 executor: {
-                    primary: 'AI后端工程师（碳基主导）',
-                    secondary: 'AI技术方案助手（硅基辅助）'
+                    primary: 'AI后端工程师（碳基辅助）',
+                    secondary: 'AI技术方案助手（硅基主导）'
                 },
                 aiConfig: {
                     agentType: 'AI技术方案助手',
@@ -3647,7 +4176,6 @@
                 },
                 evidence: {
                     I: ['评审后PRD', '产品原型', '数据可信化规范'],
-                    P: ['AI技术方案记录'],
                     R: ['后端架构设计文档', '数据服务技术方案', '模块拆分清单'],
                     V: ['后端负责人审批']
                 }
@@ -3660,12 +4188,12 @@
                 roleId: 'TDG-AIBE',
                 roleName: 'AI后端工程师(TDG)',
                 riskLevel: 'R2',
-                goal: '按照数据服务技术方案，开发疫苗数据可信化处理模块、可信存储模块、数据接口服务',
+                goal: '按照数据服务技术方案，开发药品数据可信化处理模块、可信存储模块、数据接口服务',
                 inputs: ['数据服务技术方案', '模块拆分清单', '数据可信化规范', '数据库设计文档'],
                 outputs: ['后端开发代码', '数据库脚本', '本地可运行服务包', '开发日志'],
                 executor: {
-                    primary: 'AI后端工程师（碳基主导）',
-                    secondary: 'AI代码助手（硅基辅助）'
+                    primary: 'AI后端工程师（碳基辅助）',
+                    secondary: 'AI代码助手（硅基主导）'
                 },
                 aiConfig: {
                     agentType: 'AI代码助手',
@@ -3679,7 +4207,6 @@
                 },
                 evidence: {
                     I: ['技术方案', '模块拆分清单', '数据可信化规范', '数据库设计文档'],
-                    P: ['AI代码生成记录'],
                     R: ['后端源代码', '数据库脚本', '本地可运行服务包', '开发日志'],
                     V: ['代码提交记录']
                 }
@@ -3696,8 +4223,8 @@
                 inputs: ['后端开发代码', '数据可信化规范', '测试数据样本', '接口文档'],
                 outputs: ['后端自测报告', '数据问题修复清单', '接口准确性校验报告'],
                 executor: {
-                    primary: 'AI后端工程师（碳基主导）',
-                    secondary: 'AI测试用例助手（硅基辅助）'
+                    primary: 'AI后端工程师（碳基辅助）',
+                    secondary: 'AI测试用例助手（硅基主导）'
                 },
                 aiConfig: {
                     agentType: 'AI测试用例助手',
@@ -3711,7 +4238,6 @@
                 },
                 evidence: {
                     I: ['后端代码', '数据可信化规范', '测试数据样本', '接口文档'],
-                    P: ['AI测试用例记录'],
                     R: ['后端自测报告', '数据问题修复清单', '接口准确性校验报告'],
                     V: ['后端负责人审批']
                 }
@@ -3724,12 +4250,12 @@
                 roleId: 'TDG-AIBE',
                 roleName: 'AI后端工程师(TDG)',
                 riskLevel: 'R2',
-                goal: '配合前端工程师开展数据接口联调，排查数据接口异常，确保疫苗数据准确传输与展示',
+                goal: '配合前端工程师开展数据接口联调，排查数据接口异常，确保药品数据准确传输与展示',
                 inputs: ['自测后代码', '数据接口服务', '接口文档', '自测报告'],
                 outputs: ['联调问题记录表', '联调修复报告', '接口优化说明'],
                 executor: {
-                    primary: 'AI后端工程师（碳基主导）',
-                    secondary: 'AI联调辅助（硅基辅助）'
+                    primary: 'AI后端工程师（碳基辅助）',
+                    secondary: 'AI联调辅助（硅基主导）'
                 },
                 aiConfig: {
                     agentType: 'AI联调辅助',
@@ -3743,7 +4269,6 @@
                 },
                 evidence: {
                     I: ['自测后代码', '数据接口服务', '接口文档', '自测报告'],
-                    P: ['AI联调辅助记录'],
                     R: ['联调问题记录表', '联调修复报告', '接口优化说明'],
                     V: ['前后端负责人双确认']
                 }
@@ -3760,8 +4285,8 @@
                 inputs: ['联调优化后后端代码', '数据库脚本', '自测报告', '联调修复报告', '数据服务部署规范', '国产化部署要求'],
                 outputs: ['后端打包文件', '数据库部署脚本', '部署操作手册', '数据服务验证报告'],
                 executor: {
-                    primary: 'AI后端工程师（碳基主导）',
-                    secondary: 'AI发布辅助（硅基辅助）'
+                    primary: 'AI后端工程师（碳基辅助）',
+                    secondary: 'AI发布辅助（硅基主导）'
                 },
                 aiConfig: {
                     agentType: 'AI发布辅助',
@@ -3775,7 +4300,6 @@
                 },
                 evidence: {
                     I: ['联调优化后代码', '数据库脚本', '自测报告', '联调修复报告', '部署规范文档', '国产化要求'],
-                    P: ['AI部署辅助记录'],
                     R: ['后端打包文件', '数据库部署脚本', '部署操作手册', '数据服务验证报告'],
                     V: ['后端负责人+运维人员双确认']
                 }
@@ -3793,8 +4317,8 @@
                 inputs: ['PRD文档', '产品原型', '前端/后端技术方案', '接口文档', '项目排期', 'AI能力需求', '国产化适配要求'],
                 outputs: ['测试需求分析报告', '测试计划', '测试风险评估报告'],
                 executor: {
-                    primary: 'AI测试工程师（碳基主导）',
-                    secondary: 'AI测试规划助手（硅基辅助）'
+                    primary: 'AI测试工程师（碳基辅助）',
+                    secondary: 'AI测试规划助手（硅基主导）'
                 },
                 aiConfig: {
                     agentType: 'AI测试规划助手',
@@ -3808,7 +4332,6 @@
                 },
                 evidence: {
                     I: ['PRD文档', '技术方案', '接口文档', '项目排期', 'AI需求', '国产化要求'],
-                    P: ['AI测试规划记录'],
                     R: ['测试需求分析报告', '测试计划', '测试风险评估报告'],
                     V: ['测试负责人+产品经理双确认']
                 }
@@ -3825,8 +4348,8 @@
                 inputs: ['测试需求分析报告', '测试计划', 'PRD文档', '前端/后端技术方案', '接口文档', 'AI测试样本', '国产化适配要求'],
                 outputs: ['完整测试用例集', '测试数据', '用例评审报告'],
                 executor: {
-                    primary: 'AI测试工程师（碳基主导）',
-                    secondary: 'AI测试用例生成助手（硅基辅助）'
+                    primary: 'AI测试工程师（碳基辅助）',
+                    secondary: 'AI测试用例生成助手（硅基主导）'
                 },
                 aiConfig: {
                     agentType: 'AI测试用例生成助手',
@@ -3840,7 +4363,6 @@
                 },
                 evidence: {
                     I: ['测试需求分析报告', '测试计划', 'PRD文档', '技术方案', 'AI测试样本', '国产化要求'],
-                    P: ['AI用例生成记录'],
                     R: ['完整测试用例集', '测试数据', '用例评审报告'],
                     V: ['测试团队内部评审+产品经理确认']
                 }
@@ -3857,8 +4379,8 @@
                 inputs: ['测试用例集', '测试数据', '前端/后端打包文件', '测试工具'],
                 outputs: ['测试报告', 'bug报告', '测试日志', '异常问题记录'],
                 executor: {
-                    primary: 'AI测试工程师（碳基主导）',
-                    secondary: 'AI测试执行助手（硅基辅助）'
+                    primary: 'AI测试工程师（碳基辅助）',
+                    secondary: 'AI测试执行助手（硅基主导）'
                 },
                 aiConfig: {
                     agentType: 'AI测试执行助手',
@@ -3872,7 +4394,6 @@
                 },
                 evidence: {
                     I: ['测试用例集', '测试数据', '前端/后端打包文件', '测试工具'],
-                    P: ['AI测试执行记录'],
                     R: ['测试报告', 'bug报告', '测试日志', '异常问题记录'],
                     V: ['测试负责人审核']
                 }
@@ -3889,8 +4410,8 @@
                 inputs: ['bug修复报告', '前端/后端修复后打包文件', '测试用例', '原测试报告'],
                 outputs: ['bug回归报告', '测试补充报告', '未修复bug跟踪清单'],
                 executor: {
-                    primary: 'AI测试工程师（碳基主导）',
-                    secondary: 'AI回归测试助手（硅基辅助）'
+                    primary: 'AI测试工程师（碳基辅助）',
+                    secondary: 'AI回归测试助手（硅基主导）'
                 },
                 aiConfig: {
                     agentType: 'AI回归测试助手',
@@ -3904,7 +4425,6 @@
                 },
                 evidence: {
                     I: ['bug修复报告', '修复后打包文件', '测试用例', '原测试报告'],
-                    P: ['AI回归测试记录'],
                     R: ['bug回归报告', '测试补充报告', '未修复bug跟踪清单'],
                     V: ['测试负责人审批']
                 }
@@ -3921,8 +4441,8 @@
                 inputs: ['所有测试报告', 'bug回归报告', '未修复bug跟踪清单', '测试日志'],
                 outputs: ['测试总结报告', '测试归档文件'],
                 executor: {
-                    primary: 'AI测试工程师（碳基主导）',
-                    secondary: 'AI报告生成助手（硅基辅助）'
+                    primary: 'AI测试工程师（碳基辅助）',
+                    secondary: 'AI报告生成助手（硅基主导）'
                 },
                 aiConfig: {
                     agentType: 'AI报告生成助手',
@@ -3936,7 +4456,6 @@
                 },
                 evidence: {
                     I: ['所有测试报告', 'bug回归报告', '未修复bug跟踪清单', '测试日志'],
-                    P: ['AI报告生成记录'],
                     R: ['测试总结报告', '测试归档文件'],
                     V: ['测试负责人+产品经理+项目负责人三确认']
                 }
@@ -3969,7 +4488,6 @@
                 },
                 evidence: {
                     I: ['系统监控数据'],
-                    P: ['AI巡检分析记录'],
                     R: ['巡检报告'],
                     V: ['经理确认签字']
                 }
@@ -4001,7 +4519,6 @@
                 },
                 evidence: {
                     I: ['客户问题描述', '系统日志'],
-                    P: ['AI问题分析记录'],
                     R: ['问题处理记录'],
                     V: ['客户确认解决']
                 }
@@ -4033,7 +4550,6 @@
                 },
                 evidence: {
                     I: ['客户需求原始记录', '会议纪要'],
-                    P: ['AI需求分析记录'],
                     R: ['需求分析文档'],
                     V: ['客户确认函']
                 }
@@ -4065,7 +4581,6 @@
                 },
                 evidence: {
                     I: ['问题记录', '工单'],
-                    P: ['AI升级评估记录'],
                     R: ['升级处理记录'],
                     V: ['升级处理确认']
                 }
@@ -4080,7 +4595,7 @@
                 riskLevel: 'R1',
                 goal: '为客户提供系统操作培训，提升客户使用能力，减少问题发生',
                 inputs: ['培训需求清单'],
-                outputs: ['培训教材', '操作手册', '培训签到表', '培训效果评估表'],
+                outputs: ['培训教材', '操作手册', '培训签到表'],
                 executor: {
                     primary: '客户服务经理（碳基主导）',
                     secondary: 'AI培训内容生成助手（硅基辅助）'
@@ -4097,9 +4612,7 @@
                 },
                 evidence: {
                     I: ['培训需求清单'],
-                    P: ['AI培训材料生成记录'],
-                    R: ['培训材料', '培训签到表'],
-                    V: ['培训效果评估表']
+                    R: ['培训材料', '培训签到表']
                 }
             },
             {
@@ -4129,7 +4642,6 @@
                 },
                 evidence: {
                     I: ['客户需求文档'],
-                    P: ['AI项目评估记录'],
                     R: ['项目计划', '需求确认单'],
                     V: ['项目立项确认']
                 }
@@ -4161,7 +4673,6 @@
                 },
                 evidence: {
                     I: ['满意度问卷原始数据'],
-                    P: ['AI分析记录'],
                     R: ['满意度分析报告'],
                     V: ['改进计划确认']
                 }
@@ -4193,7 +4704,6 @@
                 },
                 evidence: {
                     I: ['服务记录', '工单数据'],
-                    P: ['AI报告生成记录'],
                     R: ['服务总结报告', '典型案例'],
                     V: ['部门负责人审批']
                 }
@@ -4227,7 +4737,6 @@
                 },
                 evidence: {
                     I: ['公司年度业务发展规划', '行业市场规模数据', '历史业绩数据', '考核激励管理制度'],
-                    P: ['AI目标规划记录'],
                     R: ['年度目标责任书', '目标拆解方案', '考核激励细则', '校准计划表'],
                     V: ['部门负责人签字确认']
                 }
@@ -4259,7 +4768,6 @@
                 },
                 evidence: {
                     I: ['客户信息库', '服务清单', '渠道信息', '竞品分析报告', '内部资源说明'],
-                    P: ['AI资源分析记录'],
                     R: ['资源盘点台账', '适配性分析报告', '补充拓展计划', '动态更新台账'],
                     V: ['系统存档确认']
                 }
@@ -4292,7 +4800,6 @@
                 },
                 evidence: {
                     I: ['目标客户名录', '服务能力说明', '评估标准', '市场痛点分析'],
-                    P: ['AI客户分析记录'],
                     R: ['目标客户信息表', '需求分析表', '潜力评估报告', '开发清单'],
                     V: ['系统存档确认']
                 }
@@ -4324,14 +4831,13 @@
                 },
                 evidence: {
                     I: ['客户开发清单', '组织架构信息', '关键人挖掘模板', '价值资料包'],
-                    P: ['AI关系分析记录'],
                     R: ['决策链梳理表', '关键人需求报告', '关系维护记录表', '价值传递方案'],
                     V: ['系统存档确认']
                 }
             },
             {
                 id: 'CSE_005',
-                name: '定制化方案设计与呈现',
+                name: '方案设计与汇报',
                 stageId: 'STAGE_02',
                 stageName: 'UI设计',
                 roleId: 'CSE',
@@ -4356,7 +4862,6 @@
                 },
                 evidence: {
                     I: ['需求分析表', '潜力评估报告', '服务能力说明', '案例库'],
-                    P: ['AI方案设计记录'],
                     R: ['定制化服务方案', '差异化优势对比表', '案例适配报告', '演示答疑记录'],
                     V: ['方案顾问审核签字']
                 }
@@ -4364,7 +4869,7 @@
             // 第三阶段：需求转化与签约阶段
             {
                 id: 'CSE_006',
-                name: '客户需求深度挖掘与验证',
+                name: '推动客户需求深度挖掘与验证',
                 stageId: 'STAGE_03',
                 stageName: '研发开发',
                 roleId: 'CSE',
@@ -4389,14 +4894,13 @@
                 },
                 evidence: {
                     I: ['服务方案', '演示答疑记录', '调研问卷', '市场数据'],
-                    P: ['AI需求验证记录'],
                     R: ['需求调研记录', '需求验证报告', '驱动力分析表', '优化建议'],
                     V: ['部门负责人审核']
                 }
             },
             {
                 id: 'CSE_007',
-                name: '需求分析与方案优化',
+                name: '配合需求分析与方案优化',
                 stageId: 'STAGE_03',
                 stageName: '研发开发',
                 roleId: 'CSE',
@@ -4421,7 +4925,6 @@
                 },
                 evidence: {
                     I: ['需求验证报告', '初始服务方案', '资源支撑说明', '评审标准'],
-                    P: ['AI方案优化记录'],
                     R: ['适配性分析报告', '优化后服务方案', '评审记录表', '落地保障计划'],
                     V: ['部门负责人签字确认']
                 }
@@ -4453,7 +4956,6 @@
                 },
                 evidence: {
                     I: ['优化后服务方案', '预算调研记录', '成本核算表', '市场行情数据'],
-                    P: ['AI报价谈判记录'],
                     R: ['预算调研报告', '报价方案', '谈判策略方案', '谈判记录'],
                     V: ['共识确认']
                 }
@@ -4485,7 +4987,6 @@
                 },
                 evidence: {
                     I: ['谈判共识记录', '服务方案', '报价方案', '合同模板', '资质证明'],
-                    P: ['AI合同审核记录'],
                     R: ['合同草案', '合规评审报告', '协商记录', '正式合同', '审批记录'],
                     V: ['法务+事业部总经理双签']
                 }
@@ -4518,7 +5019,6 @@
                 },
                 evidence: {
                     I: ['合作合同', '服务方案', '落地保障计划', '验收标准', '回款流程'],
-                    P: ['AI履约管理记录'],
                     R: ['履约执行计划', '进度跟踪表', '验收资料包', '回款记录', '问题处理记录'],
                     V: ['履约负责人审核']
                 }
@@ -4550,7 +5050,6 @@
                 },
                 evidence: {
                     I: ['验收报告', '履约记录', '调研模板', '续约政策', '新增服务清单'],
-                    P: ['AI价值分析记录'],
                     R: ['满意度调研报告', '优化记录', '回访记录表', '需求表', '价值深挖报告'],
                     V: ['系统存档确认']
                 }
@@ -4583,7 +5082,6 @@
                 },
                 evidence: {
                     I: ['执行记录', '成果文件', '数据报表', '目标完成统计', '问题汇总'],
-                    P: ['AI复盘分析记录'],
                     R: ['月度复盘报告', '专项复盘报告', '改进措施跟踪表', '会议纪要'],
                     V: ['部门负责人审核']
                 }
@@ -4615,9 +5113,412 @@
                 },
                 evidence: {
                     I: ['复盘报告', '改进措施结果', '项目执行文件', '客户反馈汇总', '现有流程模板'],
-                    P: ['AI知识沉淀记录'],
                     R: ['行业案例库', '反馈同步报告', '流程优化方案', '反哺建议报告', '更新后流程文件'],
                     V: ['流程管理部门审核确认']
+                }
+            },
+            // 监管业务拓展岗阶段 - 13个节点
+            {
+                id: 'GOV_001',
+                name: '目标设定与拆解',
+                stageId: 'STAGE_01',
+                stageName: '需求定义',
+                roleId: 'GOV',
+                roleName: '监管业务拓展岗',
+                riskLevel: 'R1',
+                goal: '明确药品监管业务拓展年度目标，制定量化指标，按周期/客户类型拆解，绑定考核激励规则',
+                inputs: ['公司年度业务发展规划', '行业市场规模数据', '历史业绩数据', '考核激励制度'],
+                outputs: ['年度目标责任书', '目标拆解方案', '考核激励细则', '动态校准计划'],
+                executor: {
+                    primary: '监管业务拓展专员/经理（碳基主导）',
+                    secondary: 'AI目标分析助手（硅基辅助）'
+                },
+                aiConfig: {
+                    agentType: 'AI目标分析助手',
+                    usage: '输入历史数据和市场趋势，AI辅助制定目标方案',
+                    supervision: 'AI分析结果须经负责人审核确认'
+                },
+                quality: {
+                    requirements: ['目标量化可考核，拆解维度清晰，考核激励规则明确无歧义'],
+                    sla: '3-5个工作日',
+                    gate: 'R1低风险；材料完整、指标合理，经部门负责人签字确认后存档'
+                },
+                evidence: {
+                    I: ['历史数据', '市场报告'],
+                    R: ['目标责任书（签字版）', '考核细则'],
+                    V: ['负责人审批确认']
+                }
+            },
+            {
+                id: 'GOV_002',
+                name: '资源盘点整合',
+                stageId: 'STAGE_01',
+                stageName: '需求定义',
+                roleId: 'GOV',
+                roleName: '监管业务拓展岗',
+                riskLevel: 'R1',
+                goal: '系统盘点药品监管领域内外部资源，完成客户、产品、渠道、竞品及内部资源分级梳理与整合',
+                inputs: ['现有客户信息库', '公司服务清单', '合作渠道信息', '竞品分析报告', '内部支撑资源说明'],
+                outputs: ['多维度资源盘点台账', '资源适配性分析报告', '资源补充计划', '动态更新台账'],
+                executor: {
+                    primary: '监管业务拓展专员/经理（碳基主导）',
+                    secondary: 'AI资源分析助手（硅基辅助）'
+                },
+                aiConfig: {
+                    agentType: 'AI资源分析助手',
+                    usage: '用于竞品分析、数据汇总、资源匹配度评估',
+                    supervision: 'AI分析结果须人工复核确认'
+                },
+                quality: {
+                    requirements: ['资源盘点无遗漏，分级标准清晰，适配性分析精准'],
+                    sla: '2-3个工作日',
+                    gate: 'R1低风险；台账完整、分析精准，系统存档即可'
+                },
+                evidence: {
+                    I: ['客户库', '服务清单'],
+                    R: ['资源台账', '分析报告'],
+                    V: ['系统存档确认']
+                }
+            },
+            {
+                id: 'GOV_003',
+                name: '客户定位筛选',
+                stageId: 'STAGE_01',
+                stageName: '需求定义',
+                roleId: 'GOV',
+                roleName: '监管业务拓展岗',
+                riskLevel: 'R1',
+                goal: '采集目标客户基础信息，分析合规现状与痛点，匹配公司服务能力，完成需求优先级排序与合作潜力评估',
+                inputs: ['目标客户名录', '公司服务能力说明', '客户信息采集模板', '合作潜力评估标准', '行业政策与痛点分析'],
+                outputs: ['合格目标客户信息表', '客户需求分析表', '客户合作潜力评估报告', '精准客户开发清单'],
+                executor: {
+                    primary: '监管业务拓展专员/经理（碳基+硅基）',
+                    secondary: 'AI客户分析助手（硅基辅助）'
+                },
+                aiConfig: {
+                    agentType: 'AI客户分析助手',
+                    usage: '输入客户原始信息，AI自动完成需求分析和潜力评估',
+                    supervision: 'AI评估结果须人工复核，分级标准由负责人确认'
+                },
+                quality: {
+                    requirements: ['客户信息采集完整，优先级划分合理，潜力评估按标准执行'],
+                    sla: '3-5个工作日',
+                    gate: 'R1低风险；清单完整、分级明确，系统存档后执行'
+                },
+                evidence: {
+                    I: ['客户名录', '原始数据'],
+                    R: ['分析表', '评估报告', '开发清单'],
+                    V: ['负责人审核确认']
+                }
+            },
+            {
+                id: 'GOV_004',
+                name: '关键人挖掘维护',
+                stageId: 'STAGE_01',
+                stageName: '需求定义',
+                roleId: 'GOV',
+                roleName: '监管业务拓展岗',
+                riskLevel: 'R1',
+                goal: '识别客户内部决策链关键人，梳理角色分工与权重，挖掘核心需求与合作顾虑，实现关系递进维护',
+                inputs: ['精准客户开发清单', '客户组织架构信息', '关键人识别模板', '价值资料包'],
+                outputs: ['客户决策链梳理表', '关键人需求分析报告', '客户关系维护记录表', '定制化价值传递方案'],
+                executor: {
+                    primary: '监管业务拓展专员/经理（碳基主导）',
+                    secondary: 'AI关系分析助手（硅基辅助）'
+                },
+                aiConfig: {
+                    agentType: 'AI关系分析助手',
+                    usage: '用于决策链分析、关系阶段评估、维护计划生成',
+                    supervision: 'AI分析结果辅助人工决策，关键人关系维护以人工为主'
+                },
+                quality: {
+                    requirements: ['决策链梳理精准，关键人无遗漏，关系维护记录完整'],
+                    sla: '持续跟进（按周期提交记录）',
+                    gate: 'R1低风险；记录完整、关系递进有效，系统存档'
+                },
+                evidence: {
+                    I: ['客户清单', '组织架构'],
+                    R: ['决策链表', '需求报告', '维护记录'],
+                    V: ['定期提交确认']
+                }
+            },
+            {
+                id: 'GOV_005',
+                name: '需求挖掘对接',
+                stageId: 'STAGE_01',
+                stageName: '需求定义',
+                roleId: 'GOV',
+                roleName: '监管业务拓展岗',
+                riskLevel: 'R2',
+                goal: '对接核心目标客户，挖掘药监信息化监管相关需求，同步传递公司产品/服务核心优势，完成需求初步确认',
+                inputs: ['核心客户名单', '公司产品/服务手册', '药监行业基础监管要求', '客户初步需求反馈'],
+                outputs: ['客户需求确认单', '初步报价方案'],
+                executor: {
+                    primary: '监管业务拓展专员/经理（碳基主导）',
+                    secondary: 'AI需求分析助手（硅基辅助）'
+                },
+                aiConfig: {
+                    agentType: 'AI需求分析助手',
+                    usage: '用于需求文本分析、归类整理、报价参考',
+                    supervision: 'AI分析辅助人工确认，报价方案须经负责人审批'
+                },
+                quality: {
+                    requirements: ['客户确认需求内容，无核心需求遗漏，报价方案经初步审批'],
+                    sla: '2-3个工作日',
+                    gate: 'R2中风险；上级主管审核需求材料及报价方案后，进入下一节点'
+                },
+                evidence: {
+                    I: ['产品手册', '监管要求'],
+                    R: ['需求确认单', '审批后报价方案'],
+                    V: ['客户签字确认']
+                }
+            },
+            {
+                id: 'GOV_006',
+                name: '投标文件编制',
+                stageId: 'STAGE_02',
+                stageName: 'UI设计',
+                roleId: 'GOV',
+                roleName: '监管业务拓展岗',
+                riskLevel: 'R2',
+                goal: '结合政务信息化项目招投标要求，组织团队编制投标文件，审核文件合规性、完整性，确保投标流程规范',
+                inputs: ['项目招标文件', '项目初步范围说明书', '投标资质文件'],
+                outputs: ['完整投标文件', '投标保证金缴纳凭证'],
+                executor: {
+                    primary: '监管业务拓展专员/经理（碳基+硅基）',
+                    secondary: 'AI文档生成助手（硅基辅助）'
+                },
+                aiConfig: {
+                    agentType: 'AI文档生成助手',
+                    usage: '输入招标文件要求，AI辅助生成投标文件框架和内容',
+                    supervision: 'AI生成内容须经团队审核修改，确保符合招标要求'
+                },
+                quality: {
+                    requirements: ['投标文件编制完成、审核通过，符合招标文件全部要求，按时提交'],
+                    sla: '5-10个工作日（按项目规模）',
+                    gate: 'R2中风险；投标文件经部门负责人+合规审核通过、按时提交后，进入下一节点'
+                },
+                evidence: {
+                    I: ['招标文件', '资质文件'],
+                    R: ['审核后投标文件', '保证金凭证'],
+                    V: ['部门负责人+合规审核签字']
+                }
+            },
+            {
+                id: 'GOV_007',
+                name: '投标执行',
+                stageId: 'STAGE_02',
+                stageName: 'UI设计',
+                roleId: 'GOV',
+                roleName: '监管业务拓展岗',
+                riskLevel: 'R2',
+                goal: '按招标要求完成投标全流程，参与投标演示与答疑，力争中标',
+                inputs: ['审核通过的投标文件', '投标保证金缴纳凭证', '投标演示材料'],
+                outputs: ['投标提交回执', '投标演示记录', '开标结果记录'],
+                executor: {
+                    primary: '监管业务拓展专员/经理（碳基主导）',
+                    secondary: 'AI演示辅助助手（硅基辅助）'
+                },
+                aiConfig: {
+                    agentType: 'AI演示辅助助手',
+                    usage: '用于投标演示材料优化、答疑话术生成',
+                    supervision: '辅助人工演示，答疑内容须人工确认'
+                },
+                quality: {
+                    requirements: ['投标文件按时提交，保证金缴纳到位，演示顺利完成'],
+                    sla: '按招标文件要求',
+                    gate: 'R2中风险；投标执行完成，进入下一节点'
+                },
+                evidence: {
+                    I: ['投标文件', '演示材料'],
+                    R: ['提交回执', '开标记录'],
+                    V: ['投标执行确认']
+                }
+            },
+            {
+                id: 'GOV_008',
+                name: '中标签约',
+                stageId: 'STAGE_03',
+                stageName: '研发开发',
+                roleId: 'GOV',
+                roleName: '监管业务拓展岗',
+                riskLevel: 'R3',
+                goal: '跟踪投标结果，确认中标后对接合同细节，完善合同条款，完成合同审核与签约',
+                inputs: ['中标通知书', '合同模板', '项目初步范围说明书'],
+                outputs: ['正式生效合同', '项目实施计划', '完善版项目初步范围说明书'],
+                executor: {
+                    primary: '监管业务拓展专员/经理（碳基主导）',
+                    secondary: 'AI合同审查助手（硅基辅助）'
+                },
+                aiConfig: {
+                    agentType: 'AI合同审查助手',
+                    usage: '用于合同条款合规性检查、风险点识别',
+                    supervision: 'AI审查结果须经法务复核确认'
+                },
+                quality: {
+                    requirements: ['合同条款双方达成一致、签字盖章生效'],
+                    sla: '3-7个工作日',
+                    gate: 'R3高风险；合同经法务+部门负责人双审备案、双方签约生效后，进入下一节点'
+                },
+                evidence: {
+                    I: ['中标通知书', '合同模板'],
+                    R: ['生效合同原件', '合同审核记录'],
+                    V: ['法务+部门负责人双审备案']
+                }
+            },
+            {
+                id: 'GOV_009',
+                name: '合同洽谈',
+                stageId: 'STAGE_03',
+                stageName: '研发开发',
+                roleId: 'GOV',
+                roleName: '监管业务拓展岗',
+                riskLevel: 'R3',
+                goal: '基于谈判共识协商合同核心条款，开展合同合规性评审，排查法律与业务风险，确保合同高效签署',
+                inputs: ['报价谈判共识记录', '定制化服务方案', '报价方案', '标准合同模板', '合同合规评审标准'],
+                outputs: ['合作合同草案', '合同合规性评审报告', '合同条款协商记录', '正式生效合同'],
+                executor: {
+                    primary: '监管业务拓展专员/经理（碳基主导）',
+                    secondary: 'AI合规检查助手（硅基辅助）'
+                },
+                aiConfig: {
+                    agentType: 'AI合规检查助手',
+                    usage: '用于合同条款合规性自动检查、风险点标注',
+                    supervision: 'AI检查结果须法务专员复核确认'
+                },
+                quality: {
+                    requirements: ['合同条款完整，无歧义，合规评审全覆盖，签约流程按规定执行'],
+                    sla: '2-5个工作日',
+                    gate: 'R3高风险；合同合规、流程完整，经法务+事业部总经理双签备案'
+                },
+                evidence: {
+                    I: ['方案', '报价', '合规标准'],
+                    R: ['合同草案', '评审报告', '正式合同'],
+                    V: ['法务+总经理双签备案']
+                }
+            },
+            {
+                id: 'GOV_010',
+                name: '立项审批',
+                stageId: 'STAGE_04',
+                stageName: '测试验收',
+                roleId: 'GOV',
+                roleName: '监管业务拓展岗',
+                riskLevel: 'R1',
+                goal: '完成公司内部立项审批，组建项目团队，明确团队分工，制定项目管理总则',
+                inputs: ['生效合同', '完善版项目初步范围说明书', '立项申请材料'],
+                outputs: ['项目团队分工表', '项目管理总则'],
+                executor: {
+                    primary: '监管业务拓展专员/经理（碳基主导）',
+                    secondary: 'AI立项辅助助手（硅基辅助）'
+                },
+                aiConfig: {
+                    agentType: 'AI立项辅助助手',
+                    usage: '用于立项材料模板生成、团队分工建议',
+                    supervision: '辅助人工决策，最终以审批结果为准'
+                },
+                quality: {
+                    requirements: ['项目团队成员确认到位、分工明确，管理总则经部门负责人审核通过'],
+                    sla: '2-3个工作日',
+                    gate: 'R1低风险；立项审批完成、团队组建到位后，进入下一节点'
+                },
+                evidence: {
+                    I: ['合同', '范围说明书'],
+                    R: ['团队分工确认表', '管理总则'],
+                    V: ['立项审批通过']
+                }
+            },
+            {
+                id: 'GOV_011',
+                name: '实施计划',
+                stageId: 'STAGE_04',
+                stageName: '测试验收',
+                roleId: 'GOV',
+                roleName: '监管业务拓展岗',
+                riskLevel: 'R1',
+                goal: '制定详细实施计划，组织项目启动会，明确各成员职责及工作节奏，同步向客户同步实施计划',
+                inputs: ['详细项目范围说明书', '需求拆解清单', '项目团队分工表', '生效合同'],
+                outputs: ['详细项目实施计划（甘特图）', '项目启动会纪要', '实施阶段质量管控标准'],
+                executor: {
+                    primary: '监管业务拓展专员/经理（碳基主导）',
+                    secondary: 'AI计划生成助手（硅基辅助）'
+                },
+                aiConfig: {
+                    agentType: 'AI计划生成助手',
+                    usage: '用于实施计划甘特图生成、里程碑设置、资源估算',
+                    supervision: 'AI生成计划须经团队审核确认'
+                },
+                quality: {
+                    requirements: ['实施计划明确各阶段进度节点及责任人，启动会顺利召开'],
+                    sla: '2-3个工作日',
+                    gate: 'R1低风险；实施计划经岗位负责人确认，启动会完成后，进入下一节点'
+                },
+                evidence: {
+                    I: ['范围说明书', '合同'],
+                    R: ['实施计划', '启动会纪要（签字）'],
+                    V: ['负责人确认']
+                }
+            },
+            {
+                id: 'GOV_014',
+                name: '客户验收',
+                stageId: 'STAGE_05',
+                stageName: '上线发布',
+                roleId: 'GOV',
+                roleName: '监管业务拓展岗',
+                riskLevel: 'R3',
+                goal: '组织客户进行项目验收，对照交付标准及合同要求，解答疑问，收集验收意见，整改问题直至验收通过',
+                inputs: ['项目实施成果', '交付资料', '测试报告', '验收报告模板', '生效合同'],
+                outputs: ['客户签字确认的验收报告', '验收意见记录', '问题整改报告（如有）'],
+                executor: {
+                    primary: '监管业务拓展专员/经理（碳基主导）',
+                    secondary: 'AI验收辅助助手（硅基辅助）'
+                },
+                aiConfig: {
+                    agentType: 'AI验收辅助助手',
+                    usage: '用于验收材料整理、问题记录辅助',
+                    supervision: '辅助人工验收工作'
+                },
+                quality: {
+                    requirements: ['客户验收通过并签字确认，验收中提出的问题全部整改完毕'],
+                    sla: '2-5个工作日',
+                    gate: 'R3高风险；验收报告经客户及公司高层双签确认后，进入下一节点'
+                },
+                evidence: {
+                    I: ['交付资料', '合同'],
+                    R: ['签字版验收报告', '整改报告'],
+                    V: ['客户及公司高层双签确认']
+                }
+            },
+            {
+                id: 'GOV_015',
+                name: '回款跟进',
+                stageId: 'STAGE_05',
+                stageName: '上线发布',
+                roleId: 'GOV',
+                roleName: '监管业务拓展岗',
+                riskLevel: 'R3',
+                goal: '验收通过后依据合同约定，对接客户及财务部门，提交收款资料，跟进回款进度，确保款项按时足额到账',
+                inputs: ['生效合同', '客户签字版验收报告', '发票', '收款申请资料', '合同回款条款'],
+                outputs: ['收款申请单', '发票签收记录', '回款凭证', '回款进度跟踪表'],
+                executor: {
+                    primary: '监管业务拓展专员/经理（碳基主导）',
+                    secondary: 'AI回款提醒助手（硅基辅助）'
+                },
+                aiConfig: {
+                    agentType: 'AI回款提醒助手',
+                    usage: '用于回款节点自动提醒、进度跟踪',
+                    supervision: 'AI提醒辅助人工跟进'
+                },
+                quality: {
+                    requirements: ['收款资料提交齐全，款项按合同约定足额到账，回款记录完整'],
+                    sla: '按合同约定回款节点',
+                    gate: 'R3高风险；款项足额到账、回款凭证齐全后，进入下一阶段'
+                },
+                evidence: {
+                    I: ['合同', '验收报告', '发票'],
+                    R: ['收款申请', '签收记录', '回款凭证'],
+                    V: ['财务确认到账']
                 }
             },
             // 可信数据治理岗阶段 - 4个节点
@@ -4630,11 +5531,11 @@
                 roleName: '可信数据治理岗',
                 riskLevel: 'R1',
                 goal: '对接合作企业，明确其数据治理场景类型，确认治理范围、交付内容及前置条件',
-                inputs: ['合作企业合作意向说明书', '合作企业资质证明', '疫苗追溯协同服务平台账户有效性证明', '合作企业初步数据提供清单'],
-                outputs: ['《合作企业数据场景判定表》', '《数据治理需求确认单》', '合作企业前置条件达标记录表'],
+                inputs: ['合作企业合作意向说明书', '合作企业资质证明（营业执照，数据授权文件）', '协同服务平台账户有效性证明', '合作企业初步数据提供清单（人口/品种占比/发货数据等）'],
+                outputs: ['《合作企业数据场景判定表》', '《数据治理需求确认单》（明确治理范围、交付内容，时间节点）', '合作企业前置条件达标记录表（如账户有效性，数据完整性）'],
                 executor: {
-                    primary: '数据治理专员（碳基主导）',
-                    secondary: 'AI需求分析助手（硅基辅助）'
+                    primary: '数据治理专员（碳基辅助）',
+                    secondary: 'AI需求分析助手（硅基主导）'
                 },
                 aiConfig: {
                     agentType: 'AI需求分析助手',
@@ -4648,25 +5549,24 @@
                 },
                 evidence: {
                     I: ['合作企业资质证明', '账户有效性证明', '初步数据提供清单'],
-                    P: ['AI校验记录'],
                     R: ['场景判定表', '需求确认单', '前置条件达标记录表'],
                     V: ['双方签字/盖章确认']
                 }
             },
             {
                 id: 'VDG_002',
-                name: '疫苗基础数据标准化治理',
+                name: '药品基础数据标准化治理',
                 stageId: 'STAGE_02',
                 stageName: '研发开发',
                 roleId: 'TDG-VDG',
                 roleName: '可信数据治理岗',
                 riskLevel: 'R1',
                 goal: '对企业的原始数据进行清洗（去重/纠错）、规整（统一格式/补充字段），确保数据符合标准化要求',
-                inputs: ['《数据治理需求确认单》', '原始出入单数据Excel文件', '《疫苗数据标准化治理规范》', '全国疾控主数据文件'],
-                outputs: ['标准化治理后的数据文件', '《数据治理过程记录表》', '数据标准化校验报告'],
+                inputs: ['《数据治理需求确认单》', '《原始数据文件》', '《药品数据标准化治理规范》', '《企业主数据文件》'],
+                outputs: ['《治理后数据文件》', '《数据治理过程记录表》', '《最新企业主数据文件》'],
                 executor: {
-                    primary: '数据治理专员（碳基主导）',
-                    secondary: 'AI数据治理助手（硅基辅助）'
+                    primary: '数据治理专员（碳基辅助）',
+                    secondary: 'AI数据治理助手（硅基主导）'
                 },
                 aiConfig: {
                     agentType: 'AI数据治理助手',
@@ -4675,13 +5575,12 @@
                 },
                 quality: {
                     requirements: ['数据清洗完成：无重复数据、无逻辑错误', '数据规整完成：格式统一、必填字段无缺失', '数据达标率≥98%'],
-                    sla: '按数据量确定标准时长',
+                    sla: '1天',
                     gate: 'R1低风险；校验报告达标率≥98%，过程记录完整'
                 },
                 evidence: {
-                    I: ['原始出入单数据', '数据标准化治理规范', '全国疾控主数据文件'],
-                    P: ['AI治理日志'],
-                    R: ['标准化治理后的数据文件', '过程记录表', '校验报告'],
+                    I: ['原始数据文件', '数据标准化治理规范', '企业主数据文件'],
+                    R: ['治理后数据文件', '过程记录表', '数据校验报告'],
                     V: ['专员确认签字']
                 }
             },
@@ -4694,11 +5593,11 @@
                 roleName: '可信数据治理岗',
                 riskLevel: 'R2',
                 goal: '对比治理后数据与平台下载数据、企业发货记录，识别数据差异，分析原因并推动解决',
-                inputs: ['标准化治理后的数据文件', '疫苗追溯协同服务平台下载的比对数据', '合作企业提供的实际发货记录', '《数据差异稽核标准》'],
-                outputs: ['《差异数据统计》', '《差异问题处理记录表》', '修正后的数据文件', '差异问题闭环确认单'],
+                inputs: ['《治理后数据文件》', '《原始数据文件》', '合作企业提供的实际发货记录', '《数据差异稽核标准》'],
+                outputs: ['《差异数据统计》', '《差异问题处理记录表》', '《修改治理后数据文件》', '《差异问题闭环确认单》'],
                 executor: {
-                    primary: '数据治理专员（碳基主导）',
-                    secondary: 'AI数据稽核助手（硅基辅助）'
+                    primary: '数据治理专员（碳基辅助）',
+                    secondary: 'AI数据稽核助手（硅基主导）'
                 },
                 aiConfig: {
                     agentType: 'AI数据稽核助手',
@@ -4707,13 +5606,12 @@
                 },
                 quality: {
                     requirements: ['差异识别完整', '原因分析到位：每个差异项均有明确原因', '问题闭环完成：可解决的差异100%修正'],
-                    sla: '按差异量确定标准时长',
+                    sla: '1天',
                     gate: 'R2中风险；重大差异需部门负责人复核签字'
                 },
                 evidence: {
-                    I: ['治理后数据', '平台比对数据', '企业发货记录'],
-                    P: ['AI稽核记录'],
-                    R: ['差异数据统计', '差异问题处理记录表', '修正后数据文件'],
+                    I: ['治理后数据', '平台比对数据', '企业提供的实际发货记录'],
+                    R: ['差异数据统计', '差异问题处理记录表', '修改治理后数据文件'],
                     V: ['相关方签字确认']
                 }
             },
@@ -4726,11 +5624,11 @@
                 roleName: '可信数据治理岗',
                 riskLevel: 'R1',
                 goal: '基于标准化修正后的全量数据，按合作企业需求开展多维度细分拆解+行业整体占比测算',
-                inputs: ['修正后的数据文件', '《数据治理需求确认单》', '分析模板', '行业基准数据/同类企业对标数据'],
-                outputs: ['多维度细分拆解数据表', '行业占比测算表', '《细分维度与行业占比分析报告》', '分析过程说明'],
+                inputs: ['修改治理后数据文件', '《数据治理需求确认单》', '行业数据/同类企业对标数据'],
+                outputs: ['多维度分析报告', '行业占比测算报告'],
                 executor: {
-                    primary: '数据治理专员（碳基主导）',
-                    secondary: 'AI分析助手（硅基辅助）'
+                    primary: '数据治理专员（碳基辅助）',
+                    secondary: 'AI分析助手（硅基主导）'
                 },
                 aiConfig: {
                     agentType: 'AI分析助手',
@@ -4738,14 +5636,13 @@
                     supervision: 'AI报告须专员审核确认'
                 },
                 quality: {
-                    requirements: ['维度拆解完整', '占比测算准确：指标计算无公式错误', '对比分析到位'],
-                    sla: '按分析复杂度确定标准时长',
+                    requirements: ['覆盖所有细分维度', '行业占比测算准确：指标计算无公式错误'],
+                    sla: '1天',
                     gate: 'R1低风险；系统自动核验通过并留痕'
                 },
                 evidence: {
-                    I: ['修正后数据文件', '需求确认单', '分析模板', '行业基准数据'],
-                    P: ['AI分析记录'],
-                    R: ['细分拆解数据表', '行业占比测算表', '分析报告'],
+                    I: ['修改治理后数据文件', '需求确认单', '行业数据/同类企业对标数据'],
+                    R: ['多维度分析报告', '行业占比测算报告'],
                     V: ['与合作企业沟通确认记录']
                 }
             },
@@ -4759,8 +5656,8 @@
                 roleName: '可信数据验收交付岗',
                 riskLevel: 'R2',
                 goal: '收集可信数据治理岗提交的全套项目材料，审核材料完整性/合规性，提报法务、业务部门完成审批',
-                inputs: ['可信数据治理岗提交的材料包', '合作协议（草案）', '《数据治理项目审批材料清单》', '《疫苗数据合规审核标准》'],
-                outputs: ['《数据治理项目审批材料审核表》', '《合规审批意见单》', '《审批结果通知》', '审批材料归档台账'],
+                inputs: ['可信数据治理岗提交的材料包', '合作协议（草案，需明确数据使用范围、保密条款）', '《数据治理项目审批材料清单》', '《药品数据合规审核标准》'],
+                outputs: ['《数据治理项目审批材料审核表》', '《合规审批意见单》', '审批结果通知（通过/驳回，驳回需附整改要求）', '审批材料归档台账（含材料版本、提交时间、审批人）'],
                 executor: {
                     primary: '审批专员（碳基主导）',
                     secondary: 'AI合规检查助手（硅基辅助）'
@@ -4771,14 +5668,13 @@
                     supervision: 'AI检查结果须审批人员复核'
                 },
                 quality: {
-                    requirements: ['材料审核完成：按清单无缺失材料', '审批流程完成：法务、业务部门均出具明确意见', '结果通知清晰'],
+                    requirements: ['材料审核完成：按清单无缺失材料', '审批流程完成：法务、业务部门均出具明确意见', '审批结果通知内容清晰'],
                     sla: '标准时长1个工作日',
                     gate: 'R2中风险；材料完整合规，双部门签字确认'
                 },
                 evidence: {
-                    I: ['材料包', '合作协议草案', '审批材料清单'],
-                    P: ['AI合规检查记录'],
-                    R: ['审批材料审核表', '合规审批意见单', '审批结果通知'],
+                    I: ['治理岗所有材料', '合作协议草案', '审批材料清单'],
+                    R: ['项目审批材料审核表', '合规审批意见单', '审批结果通知'],
                     V: ['法务+业务双签']
                 }
             },
@@ -4791,8 +5687,8 @@
                 roleName: '可信数据验收交付岗',
                 riskLevel: 'R2',
                 goal: '依据验收标准，对可信数据治理岗提交的最终成果进行质量复核，出具验收报告',
-                inputs: ['审批通过的《审批结果通知》', '最终成果包', '《数据治理成果验收标准》', '验收复核工具'],
-                outputs: ['《数据治理成果验收报告》', '《质量复核记录表》', '整改通知书（如有）', '验收通过确认单'],
+                inputs: ['审批通过的《审批结果通知》', '可信数据治理岗提交的最终成果包（修正后数据，分析报告终稿、差异闭环确认单）', '《数据治理成果验收标准》', '验收复核工具（如数据抽样校验脚本、报告评分表）'],
+                outputs: ['《数据治理成果验收报告》', '质量复核记录表（记录抽样校验结果、报告评分明细）', '（仅不达标时出具，明确整改项、责任人、时限）', '验收通过确认单（仅通过时出具，需验收人签字）'],
                 executor: {
                     primary: '验收专员（碳基主导）',
                     secondary: 'AI成果校验助手（硅基辅助）'
@@ -4803,13 +5699,12 @@
                     supervision: 'AI校验结果须专员人工确认'
                 },
                 quality: {
-                    requirements: ['复核过程规范：抽样比例≥10%', '验收结论明确：无模糊结论', '整改要求可行'],
+                    requirements: ['复核过程规范：抽样比例≥10%', '验收结论明确：无模糊结论，不达标项需标注具体原因', '整改项可量化，时间合理'],
                     sla: '标准时长1个工作日',
                     gate: 'R2中风险；复核记录完整，整改项100%闭环后需二次签字确认'
                 },
                 evidence: {
-                    I: ['审批结果通知', '最终成果包', '验收标准'],
-                    P: ['AI校验记录'],
+                    I: ['审批结果通知', '最终成果包', '数据治理成果验收标准'],
                     R: ['验收报告', '质量复核记录表'],
                     V: ['验收专员签字']
                 }
@@ -4823,8 +5718,8 @@
                 roleName: '可信数据验收交付岗',
                 riskLevel: 'R3',
                 goal: '按《数据交付清单》整理最终成果，向合作企业完成正式交付，收集交付回执',
-                inputs: ['验收通过的《验收通过确认单》', '最终成果包', '《数据交付清单》', '《数据交付函》模板'],
-                outputs: ['打包后的最终成果文件', '《数据交付函》', '《交付回执单》', '《数据交付台账》'],
+                inputs: ['验收通过确认单', '交付成功压缩包', '《数据交付清单》'],
+                outputs: ['数据说明（明确交付内容、保密义务）', '交付成功压缩包', '交付回执单', '数据交付台账'],
                 executor: {
                     primary: '交付专员（碳基主导）',
                     secondary: 'AI交付辅助（硅基辅助）'
@@ -4835,15 +5730,14 @@
                     supervision: '交付物料须专员确认完整'
                 },
                 quality: {
-                    requirements: ['成果打包完整', '交付函规范：包含交付内容、保密提醒', '回执确认有效', '台账记录准确'],
-                    sla: '按交付要求确定标准时长',
-                    gate: 'R3高风险；交付函盖章，回执有效，交付台账需系统存档'
+                    requirements: ['按交付清单无遗漏成果，格式适配合作企业要求', '合作企业签字/盖章无模糊，回执日期无遗漏', '交付信息（时间/方式/接收人）与回执一致，无错误'],
+                    sla: '标准时长1个工作日',
+                    gate: 'R3高风险；回执有效，交付台账需系统存档'
                 },
                 evidence: {
-                    I: ['验收通过确认单', '最终成果包', '交付清单'],
-                    P: ['AI交付清单'],
-                    R: ['最终成果文件', '数据交付函', '交付回执单', '交付台账'],
-                    V: ['交付函盖章', '合作企业签收']
+                    I: ['验收通过确认单', '交付成功压缩包', '交付清单'],
+                    R: ['数据说明', '交付成功压缩包', '交付回执单', '数据交付台账'],
+                    V: ['合作企业签收']
                 }
             },
             {
@@ -4855,8 +5749,8 @@
                 roleName: '可信数据验收交付岗',
                 riskLevel: 'R3',
                 goal: '监督可信数据治理岗完成本机存储的项目数据销毁，确认销毁彻底性并备案；定期开展项目审计',
-                inputs: ['项目完成通知', '《本机数据销毁申请表》', '《本机数据销毁标准》', '项目全流程材料'],
-                outputs: ['《本机数据销毁监督记录表》', '《数据销毁备案回执》', '《疫苗数据治理项目审计报告》', '审计问题整改跟踪表'],
+                inputs: ['可信数据治理岗提交的本机数据销毁申请表、销毁操作记录', '本机数据销毁标准（含销毁方式、验证要求）', '项目全流程材料（审批/治理/验收/交付记录）'],
+                outputs: ['本机数据销毁监督记录表（记录监督过程、销毁验证结果）', '数据销毁备案回执（盖章版，用于存档）', '药品数据治理项目审计报告', '审计问题整改跟踪表'],
                 executor: {
                     primary: '监督专员/审计专员（碳基主导）',
                     secondary: 'AI销毁验证助手（硅基辅助）'
@@ -4867,14 +5761,13 @@
                     supervision: '销毁须部门负责人监督确认'
                 },
                 quality: {
-                    requirements: ['销毁监督到位：验证销毁彻底', '备案记录完整', '审计范围全面', '问题整改闭环'],
-                    sla: '每月/每季度1次',
-                    gate: 'R3高风险；销毁监督记录完整、备案回执盖章，审计报告需双签'
+                    requirements: ['现场/远程监督销毁过程，验证销毁彻底', '销毁申请表，监督记录表、备案回执关联存档记录完整', '审计范围覆盖项目全流程，无遗漏关键环节', '审计发现的问题100%跟踪整改，整改结果验证通过'],
+                    sla: '按照合同验收后执行',
+                    gate: 'R3高风险；销毁监督记录完整、备案回执盖章'
                 },
                 evidence: {
-                    I: ['项目完成通知', '销毁申请表', '全流程材料'],
-                    P: ['AI销毁验证记录'],
-                    R: ['销毁监督记录表', '销毁备案回执', '审计报告', '整改跟踪表'],
+                    I: ['销毁申请表', '销毁操作记录', '销毁标准', '项目全流程材料'],
+                    R: ['本机数据销毁监督记录表', '数据销毁备案回执', '审计问题整改跟踪表'],
                     V: ['部门负责人监督', '安全部门负责人双签']
                 }
             }
@@ -4889,11 +5782,80 @@
                 role: 'PM',
                 description: '用于文本结构化分析、痛点提取、用户画像生成、KANO/MoSCoW需求分类、优先级量化评分',
                 capabilities: ['文本结构化', '痛点提取', '用户画像生成', 'KANO分类', '优先级评分'],
-                applicableScenes: ['PM_001 需求调研', 'PM_002 需求分析'],
+                applicableScenes: ['PM_001 需求调研', 'PM_002 需求调研与挖掘'],
                 supervision: {
-                    pre: '明确AI使用目的和范围，配置合适Prompt',
-                    in: 'AI输出的每条结论必须附证据来源',
-                    post: 'AI输出须产品方案规划岗人工审核确认，最终决策以人工为准'
+                    pre: '保留原始访谈录音和问卷数据，人工确认数据质量',
+                    in: 'AI分析结果须附证据来源，产品经理逐条复核',
+                    post: '保留分析过程记录，最终报告需产品经理签字确认'
+                }
+            },
+            {
+                id: 'PM-PRD',
+                name: 'AI PRD文档生成助手',
+                role: 'PM',
+                type: '理解类Agent',
+                status: '已配置',
+                description: '基于需求分析文档，生成PRD初稿框架，包括章节结构、用户故事模板、Given-When-Then格式验收标准',
+                applicableScenes: ['PM_003 需求分析与优先级排序', 'PM_004 PRD文档编写'],
+                supervision: {
+                    pre: '人工确认需求文档完整性和业务边界',
+                    in: '保留AI生成版本和人工修改版本的diff记录',
+                    post: '验收标准须产品经理人工确认，PRD经上级评审签字'
+                }
+            },
+            {
+                id: 'PM-PROTOTYPE',
+                name: 'AI 原型布局建议助手',
+                role: 'PM',
+                type: '理解类Agent',
+                status: '已配置',
+                description: '基于PRD文档和设计规范，提供页面布局建议和组件使用建议',
+                applicableScenes: ['PM_004 PRD文档编写', 'PM_005 原型设计与评审'],
+                supervision: {
+                    pre: '人工配置设计约束和布局偏好',
+                    in: 'AI方案须经产品经理选择和优化调整',
+                    post: '最终原型须通过评审会议，各方签字确认'
+                }
+            },
+            {
+                id: 'PM-REVIEW',
+                name: 'AI 评审会议纪要助手',
+                role: 'PM',
+                type: '执行类Agent',
+                status: '已配置',
+                description: '基于评审会议讨论内容，自动生成结构化会议纪要',
+                applicableScenes: ['PM_005 原型设计与评审', 'PM_006 需求评审与确认'],
+                supervision: {
+                    pre: '配置会议记录格式和关键信息提取规则',
+                    in: 'AI生成的纪要须准确反映各方意见，产品经理实时确认',
+                    post: '最终纪要需各方签字确认，遗留问题录入跟踪系统'
+                }
+            },
+            {
+                id: 'PM-CHANGE',
+                name: 'AI 变更影响分析助手',
+                role: 'PM',
+                type: '判断类Agent',
+                status: '已配置',
+                description: '分析需求变更对范围、进度、成本的影响，生成变更评估报告',
+                applicableScenes: ['PM_006 需求评审与确认', 'PM_008 需求变更管理'],
+                supervision: {
+                    pre: '明确变更内容和技术边界，人工确认变更申请表完整性',
+                    in: 'AI评估须附计算依据，产品经理复核影响范围',
+                    post: '重大变更须多方会签确认，更新PRD和项目计划'
+                }
+            },
+            {
+                id: 'PM-UAT',
+                name: 'AI 验收检查助手',
+                role: 'PM',
+                type: '执行类Agent',
+                status: '已配置',
+                description: '基于PRD和验收标准，生成验收检查清单，辅助记录验收结果',
+                applicableScenes: ['PM_008 需求变更管理', 'PM_010 用户验收'],
+                evidence: {
+                    requirement: '检查清单覆盖率100%',
+                    type: '验收辅助'
                 }
             },
             {
@@ -4959,7 +5921,7 @@
                 role: 'PM',
                 description: '用于验收检查清单生成、验收结果汇总',
                 capabilities: ['检查清单生成', '结果记录', '问题汇总', '验收报告生成'],
-                applicableScenes: ['PM_007 需求验收'],
+                applicableScenes: ['PM_010 用户验收'],
                 supervision: {
                     pre: '人工确认验收标准和检查范围',
                     in: 'AI生成的检查清单需产品方案规划岗确认',
@@ -5447,6 +6409,175 @@
                     post: '典型案例需提炼经验教训'
                 }
             },
+            // ===== 监管业务拓展岗 AI智能体 =====
+            {
+                id: 'AI_GOV_01',
+                name: 'AI目标分析助手',
+                type: '目标分析类',
+                role: 'GOV',
+                description: '用于行业数据分析、目标合理性评估、预测模型',
+                capabilities: ['行业分析', '目标评估', '趋势预测', '数据可视化'],
+                applicableScenes: ['GOV_001 目标设定与拆解'],
+                supervision: {
+                    pre: '输入历史数据和市场趋势',
+                    in: 'AI辅助制定目标方案',
+                    post: 'AI分析结果须经负责人审核确认'
+                }
+            },
+            {
+                id: 'AI_GOV_02',
+                name: 'AI资源分析助手',
+                type: '资源分析类',
+                role: 'GOV',
+                description: '用于竞品分析、数据汇总、资源匹配度评估',
+                capabilities: ['竞品分析', '数据汇总', '资源匹配', '差距识别'],
+                applicableScenes: ['GOV_002 资源盘点整合'],
+                supervision: {
+                    pre: '确认资源盘点维度和分类标准',
+                    in: 'AI分析资源适配性',
+                    post: 'AI分析结果须人工复核确认'
+                }
+            },
+            {
+                id: 'AI_GOV_03',
+                name: 'AI客户分析助手',
+                type: '客户分析类',
+                role: 'GOV',
+                description: '用于客户信息采集自动化、需求分析、潜力评分',
+                capabilities: ['信息采集', '需求分析', '潜力评分', '优先级排序'],
+                applicableScenes: ['GOV_003 客户定位筛选'],
+                supervision: {
+                    pre: '输入客户原始信息',
+                    in: 'AI自动完成需求分析和潜力评估',
+                    post: 'AI评估结果须人工复核，分级标准由负责人确认'
+                }
+            },
+            {
+                id: 'AI_GOV_04',
+                name: 'AI关系分析助手',
+                type: '关系分析类',
+                role: 'GOV',
+                description: '用于决策链分析、关系阶段评估、维护计划生成',
+                capabilities: ['决策链分析', '关系评估', '维护计划', '关键人识别'],
+                applicableScenes: ['GOV_004 关键人挖掘维护'],
+                supervision: {
+                    pre: '确认决策链信息和关系阶段',
+                    in: 'AI辅助分析决策链和关键人',
+                    post: 'AI分析结果辅助人工决策，关键人关系维护以人工为主'
+                }
+            },
+            {
+                id: 'AI_GOV_05',
+                name: 'AI需求分析助手',
+                type: '需求分析类',
+                role: 'GOV',
+                description: '用于需求文本分析、归类整理、报价参考',
+                capabilities: ['文本分析', '需求归类', '报价参考', '优先级排序'],
+                applicableScenes: ['GOV_005 需求挖掘对接'],
+                supervision: {
+                    pre: '输入产品手册和监管要求',
+                    in: 'AI分析需求文本并归类',
+                    post: 'AI分析辅助人工确认，报价方案须经负责人审批'
+                }
+            },
+            {
+                id: 'AI_GOV_06',
+                name: 'AI文档生成助手',
+                type: '文档生成类',
+                role: 'GOV',
+                description: '用于投标文件框架生成、内容模板匹配、技术方案辅助撰写',
+                capabilities: ['框架生成', '模板匹配', '内容撰写', '格式规范'],
+                applicableScenes: ['GOV_006 投标文件编制'],
+                supervision: {
+                    pre: '输入招标文件要求',
+                    in: 'AI辅助生成投标文件框架和内容',
+                    post: 'AI生成内容须经团队审核修改，确保符合招标要求'
+                }
+            },
+            {
+                id: 'AI_GOV_07',
+                name: 'AI演示辅助助手',
+                type: '演示辅助类',
+                role: 'GOV',
+                description: '用于投标演示材料优化、答疑话术生成',
+                capabilities: ['材料优化', '话术生成', '演示建议', '问答准备'],
+                applicableScenes: ['GOV_007 投标执行'],
+                supervision: {
+                    pre: '确认演示材料和重点内容',
+                    in: 'AI优化演示材料和生成话术',
+                    post: '辅助人工演示，答疑内容须人工确认'
+                }
+            },
+            {
+                id: 'AI_GOV_08',
+                name: 'AI合同审查助手',
+                type: '合同审查类',
+                role: 'GOV',
+                description: '用于合同条款合规性检查、风险点识别',
+                capabilities: ['条款检查', '风险识别', '合规评估', '修改建议'],
+                applicableScenes: ['GOV_008 中标签约', 'GOV_009 合同洽谈'],
+                supervision: {
+                    pre: '输入合同模板和合规标准',
+                    in: 'AI自动检查合同条款合规性',
+                    post: 'AI审查结果须经法务复核确认'
+                }
+            },
+            {
+                id: 'AI_GOV_09',
+                name: 'AI立项辅助助手',
+                type: '立项辅助类',
+                role: 'GOV',
+                description: '用于立项材料模板生成、团队分工建议',
+                capabilities: ['材料模板', '分工建议', '资源匹配', '计划建议'],
+                applicableScenes: ['GOV_010 立项审批'],
+                supervision: {
+                    pre: '输入生效合同和范围说明书',
+                    in: 'AI生成立项材料模板和分工建议',
+                    post: '辅助人工决策，最终以审批结果为准'
+                }
+            },
+            {
+                id: 'AI_GOV_10',
+                name: 'AI计划生成助手',
+                type: '计划生成类',
+                role: 'GOV',
+                description: '用于实施计划甘特图生成、里程碑设置、资源估算',
+                capabilities: ['甘特图生成', '里程碑设置', '资源估算', '进度规划'],
+                applicableScenes: ['GOV_011 实施计划'],
+                supervision: {
+                    pre: '输入范围说明书和需求清单',
+                    in: 'AI生成实施计划和甘特图',
+                    post: 'AI生成计划须经团队审核确认'
+                }
+            },
+            {
+                id: 'AI_GOV_11',
+                name: 'AI验收辅助助手',
+                type: '验收辅助类',
+                role: 'GOV',
+                description: '用于验收材料整理、问题记录辅助',
+                capabilities: ['材料整理', '问题记录', '验收清单', '报告生成'],
+                applicableScenes: ['GOV_014 客户验收'],
+                supervision: {
+                    pre: '准备验收材料和验收标准',
+                    in: 'AI辅助整理验收材料',
+                    post: '辅助人工验收工作'
+                }
+            },
+            {
+                id: 'AI_GOV_12',
+                name: 'AI回款提醒助手',
+                type: '回款提醒类',
+                role: 'GOV',
+                description: '用于回款节点自动提醒、进度跟踪',
+                capabilities: ['节点提醒', '进度跟踪', '回款统计', '预警提示'],
+                applicableScenes: ['GOV_015 回款跟进'],
+                supervision: {
+                    pre: '输入合同回款条款',
+                    in: 'AI自动提醒回款节点',
+                    post: 'AI提醒辅助人工跟进'
+                }
+            },
             // ===== 业务拓展岗 AI智能体 =====
             {
                 id: 'AI_CSE_01',
@@ -5652,7 +6783,7 @@
                 role: 'TDG-VDG',
                 description: '用于数据清洗、格式转换、标准化处理',
                 capabilities: ['数据清洗', '格式转换', '标准化处理', '质量检测'],
-                applicableScenes: ['VDG_002 疫苗基础数据标准化治理'],
+                applicableScenes: ['VDG_002 药品基础数据标准化治理'],
                 supervision: {
                     pre: '确认数据源和质量要求',
                     in: 'AI处理结果须专员复核确认',
@@ -5752,7 +6883,7 @@
                 role: 'TDG-AIIE',
                 description: '用于评审会议纪要生成、决策点提取、遗留问题跟踪',
                 capabilities: ['会议纪要生成', '决策点提取', '遗留问题跟踪', '待办事项提取'],
-                applicableScenes: ['TDG-AIIE_001 疫苗数据平台需求评审'],
+                applicableScenes: ['TDG-AIIE_001 药品数据平台需求评审'],
                 supervision: {
                     pre: '配置会议记录格式和关键信息提取规则',
                     in: 'AI生成的纪要须准确反映各方意见',
@@ -5780,7 +6911,7 @@
                 role: 'TDG-AIIE',
                 description: '用于数据图表代码生成、组件模板提供、代码补全',
                 capabilities: ['图表代码生成', '模板提供', '代码补全', '异常处理建议'],
-                applicableScenes: ['TDG-AIIE_003 疫苗数据可视化开发'],
+                applicableScenes: ['TDG-AIIE_003 药品数据可视化开发'],
                 supervision: {
                     pre: '人工确认代码规范和约束条件',
                     in: 'AI生成代码须经开发人员测试验证',
@@ -5837,7 +6968,7 @@
                 role: 'TDG-AIBE',
                 description: '用于评审会议纪要生成、决策点提取、遗留问题跟踪',
                 capabilities: ['会议纪要生成', '决策点提取', '遗留问题跟踪', '待办事项提取'],
-                applicableScenes: ['TDG-AIBE_001 疫苗数据平台需求评审'],
+                applicableScenes: ['TDG-AIBE_001 药品数据平台需求评审'],
                 supervision: {
                     pre: '配置会议记录格式和关键信息提取规则',
                     in: 'AI生成的纪要须准确反映各方意见',
@@ -5922,13 +7053,13 @@
                 name: '产品方案规划岗',
                 color: '#3B82F6',
                 position: '产品全生命周期负责人，需求到价值的桥梁，含售前需求对接',
-                scope: '主导需求定义阶段（PM_001~PM_005），参与验收阶段（PM_007）',
+                scope: '主导需求定义阶段（PM_001~PM_006），参与需求变更（PM_008）和用户验收（PM_010）',
                 decisions: '需求优先级排序、功能范围定义、验收标准确认、客户需求初判',
                 skills: {
-                    business: { must: ['需求分析方法论', 'PRD规范写作', '产品数据分析', '客户需求挖掘'], plus: ['行业领域知识', '竞品分析能力', '商务谈判'] },
-                    ai: { must: ['AI提示词工程（Prompt Engineering）', 'AI输出审核与优化'], plus: ['AI工具链整合', 'AI能力边界判断'] },
+                    business: { must: ['需求分析方法论', 'PRD规范写作', '产品数据分析', '客户需求挖掘', '行业领域知识'], plus: ['竞品分析能力', '商务谈判'] },
+                    ai: { must: ['AI提示词工程（Prompt Engineering）', 'AI输出审核与优化', 'AI工具链整合'], plus: ['AI能力边界判断'] },
                     collaboration: { must: ['跨岗位沟通', '多方协调', '会议引导'], plus: ['设计/技术基础认知'] },
-                    tools: { must: ['原型设计工具（Axure/Figma）', '文档协作平台', '需求管理系统', 'CRM'], plus: ['数据分析工具', 'BI系统'] }
+                    tools: { must: ['原型设计工具（Axure/Figma）', '文档协作平台', '需求管理系统'], plus: ['数据分析工具', 'BI系统'] }
                 },
                 changes: {
                     research: '人工整理访谈记录，耗时2-3天 → AI自动结构化分析，1天内完成',
@@ -6025,8 +7156,8 @@
                 scope: '全流程客户服务管控，重点介入里程碑节点',
                 decisions: '服务计划调整、资源调配、风险应对策略',
                 skills: {
-                    business: { must: ['服务计划制定', '进度管理', '风险管理', '干系人管理'], plus: ['客户成功管理', '服务目录管理'] },
-                    ai: { must: ['AI客服助手使用', '服务数据分析', '客户满意度AI分析'], plus: ['AI服务工具定制'] },
+                    business: { must: ['服务计划制定', '进度管理', '风险管理', '药监业务知识', '企业业务知识'], plus: ['客户成功管理', '服务目录管理'] },
+                    ai: { must: ['AI客服助手使用', '项目管理智能体工具'], plus: ['AI服务工具定制'] },
                     collaboration: { must: ['产品研发流程', '技术实现基础'], plus: ['行业业务知识'] },
                     tools: { must: ['服务管理系统', '协作平台'], plus: ['BI报表', '数据分析'] }
                 },
@@ -6039,7 +7170,7 @@
             },
             {
                 id: 'CSE',
-                name: '业务拓展岗',
+name: '企业业务拓展岗',
                 color: '#EF4444',
                 position: '客户业务拓展部核心岗位，负责客户开发、需求对接、方案设计、合同签约及售后维护全流程',
                 scope: '主导目标规划（CSE_001~CSE_002）、客户开发（CSE_003~CSE_005）、需求转化（CSE_006~CSE_009）、履约售后（CSE_010~CSE_011）、复盘迭代（CSE_012~CSE_013）全流程',
@@ -6048,7 +7179,7 @@
                     business: { must: ['客户开发与维护', '需求挖掘与分析', '方案设计', '商务谈判', '合同管理'], plus: ['行业政策解读', '竞品分析', '财务基础'] },
                     ai: { must: ['AI情报收集', 'AI目标规划', 'AI方案生成', 'AI报价谈判', 'AI复盘分析'], plus: ['AI客户画像分析', 'AI商机预测'] },
                     collaboration: { must: ['跨部门协调', '客户关系维护', '资源整合'], plus: ['产品技术基础', '法务合规认知'] },
-                    tools: { must: ['CRM系统', 'Excel/数据分析', 'PPT演示', '文档编辑'], plus: ['BI报表', '项目管理系统'] }
+                    tools: { must: ['Excel/数据分析', 'PPT演示', '文档编辑'], plus: ['BI报表', '项目管理系统'] }
                 },
                 changes: {
                     research: '人工收集情报 → AI自动收集+分析，情报收集效率提升60%',
@@ -6059,14 +7190,35 @@
                 }
             },
             {
+                id: 'GOV',
+                name: '监管业务拓展岗',
+                color: '#1E40AF',
+                position: '负责政府药监部门及药品监管领域客户开发、市场拓展、商务谈判、合同签约及履约管理的核心执行岗位',
+                scope: '主导目标设定（GOV_001~GOV_002）、客户开发（GOV_003~GOV_005）、投标签约（GOV_006~GOV_009）、项目实施（GOV_010~GOV_011）、交付验收（GOV_014~GOV_015）全流程',
+                decisions: '药品监管服务报价方案初步审批、药品监管解决方案调整决策、常规售后合规问题处理授权、项目范围界定与管控',
+                skills: {
+                    business: { must: ['需求挖掘', '价值表达', '商务谈判', '协同沟通'], plus: ['专业表达', '方案演示', '高层对接'] },
+                    ai: { must: ['AI目标分析', 'AI资源分析', 'AI客户分析', 'AI合同审查'], plus: ['AI文档生成', 'AI演示辅助'] },
+                    collaboration: { must: ['跨部门协调', '客户关系维护', '资源整合'], plus: ['产品技术基础', '法务合规认知'] },
+                    tools: { must: ['Excel/数据分析', 'PPT演示', '文档编辑'], plus: ['BI报表', '项目管理系统'] }
+                },
+                changes: {
+                    target: '手工制定目标 → AI辅助量化分解+考核匹配，目标制定效率提升50%',
+                    resource: '人工盘点资源 → AI自动汇总+匹配度评估，资源盘点效率提升60%',
+                    customer: '人工筛选客户 → AI自动分析+潜力评估，客户筛选效率提升70%',
+                    bid: '逐字编写投标文件 → AI生成框架+模板匹配，投标编制效率提升60%',
+                    contract: '人工审查合同 → AI预检+重点复核，合同审查效率提升50%'
+                }
+            },
+            {
                 id: 'TDG-VDG',
                 name: '可信数据治理岗',
                 color: '#6366F1',
-                position: 'TDG交付部核心岗位，负责疫苗数据可信化处理与治理，确保数据质量符合监管要求',
+                position: 'TDG交付部核心岗位，负责药品数据可信化处理与治理，确保数据质量符合监管要求',
                 scope: '主导数据场景判定（VDG_001）、数据标准化治理（VDG_002）、数据稽核（VDG_003）、行业分析（VDG_004）全流程',
                 decisions: '数据治理方案审批、数据质量标准判定、差异问题处理决策、分析报告审核确认',
                 skills: {
-                    business: { must: ['数据治理方法论', '疫苗业务知识', '数据标准化规范', '质量检测'], plus: ['行业政策解读', '监管要求', '药品追溯体系'] },
+                    business: { must: ['数据治理方法论', '药品业务知识', '数据标准化规范', '质量检测'], plus: ['行业政策解读', '监管要求', '药品追溯体系'] },
                     ai: { must: ['AI数据清洗', 'AI数据稽核', 'AI分析报告生成'], plus: ['AI数据可视化', 'AI趋势预测'] },
                     collaboration: { must: ['企业需求对接', '数据质量沟通', '问题闭环协调'], plus: ['跨部门数据对接', '监管对接'] },
                     tools: { must: ['Excel/数据处理工具', '数据库查询', '数据比对工具'], plus: ['BI分析工具', 'Python数据分析'] }
@@ -6102,7 +7254,7 @@
                 id: 'TDG-AIIE',
                 name: 'AI交互工程师(TDG)',
                 color: '#0891B2',
-                position: 'TDG交付部岗位，负责疫苗数据可视化前端开发与数据展示交互',
+                position: 'TDG交付部岗位，负责药品数据可视化前端开发与数据展示交互',
                 scope: '主导需求评审（TDG-AIIE_001）、架构设计（TDG-AIIE_002）、可视化开发（TDG-AIIE_003）、自测校验（TDG-AIIE_004）、联调对接（TDG-AIIE_005）、部署验证（TDG-AIIE_006）全流程',
                 decisions: '前端技术选型、数据可视化方案设计、交互实现方案决策',
                 skills: {
@@ -6122,11 +7274,11 @@
                 id: 'TDG-AIBE',
                 name: 'AI后端工程师(TDG)',
                 color: '#059669',
-                position: 'TDG交付部岗位，负责疫苗数据服务后端开发与可信数据存储',
+                position: 'TDG交付部岗位，负责药品数据服务后端开发与可信数据存储',
                 scope: '主导需求评审（TDG-AIBE_001）、架构设计（TDG-AIBE_002）、可信数据开发（TDG-AIBE_003）、自测验证（TDG-AIBE_004）、联调开发（TDG-AIBE_005）、部署验证（TDG-AIBE_006）全流程',
                 decisions: '后端技术选型、数据服务架构设计、数据存储方案决策',
                 skills: {
-                    business: { must: ['后端开发语言（Java/Python/Go）', '数据服务API设计', '可信数据存储', '数据安全'], plus: ['区块链技术', '数据加密', '溯源系统'] },
+                    business: { must: ['后端开发语言（Java/Python/Go）', '数据服务API设计', '可信数据存储', '数据安全'], plus: ['AI能力', '数据加密'] },
                     ai: { must: ['AI代码助手', 'AI数据验证', 'AI联调辅助'], plus: ['AI日志分析', 'AI性能优化建议'] },
                     collaboration: { must: ['数据接口开发', '前端数据对接', '数据质量保障'], plus: ['数据治理团队协作', '监管系统对接'] },
                     tools: { must: ['Git', '容器化', '服务编排', 'API文档工具'], plus: ['数据库管理', '数据监控工具'] }
@@ -6275,11 +7427,7 @@
         }
         
         function getTotalMemberCount() {
-            let total = 0;
-            for (const deptId in orgMembers) {
-                total += getDeptMemberCount(deptId);
-            }
-            return total;
+            return 30;
         }
         
         // ==================== 状态管理 ====================
@@ -6327,6 +7475,9 @@
                 case 'quality':
                     renderQualityView();
                     break;
+                case 'tdg-rule':
+                    renderTDGRuleView();
+                    break;
                 case 'search':
                     // 搜索由searchNodes调用
                     break;
@@ -6373,6 +7524,7 @@
             
             currentView = 'node';
             currentNode = node;
+            currentDeptId = getDeptForRole(node.roleId);
             
             const role = roles.find(r => r.id === node.roleId);
             const content = document.getElementById('content');
@@ -6469,8 +7621,8 @@
             content.innerHTML = `
                 <div class="detail-panel fade-in">
                     <div class="detail-header" style="--role-color: ${role.color}">
-                        <button class="detail-back" onclick="showView('dept-detail', '${currentDeptId || ''}')">
-                            ← 返回部门详情
+                        <button class="detail-back" onclick="showView('role', '${node.roleId}')">
+                            ← 返回岗位详情
                         </button>
                         <h1 class="detail-title">${node.id} ${node.name}</h1>
                         <div class="detail-meta">
@@ -6518,11 +7670,11 @@
                                 执行主体
                             </h3>
                             <div class="info-item">
-                                <div class="info-label">碳基主导</div>
+                                <div class="info-label">碳基</div>
                                 <div class="info-value">${node.executor.primary}</div>
                             </div>
                             <div class="info-item" style="margin-top:12px">
-                                <div class="info-label">硅基辅助</div>
+                                <div class="info-label">硅基</div>
                                 <div class="info-value">${node.executor.secondary}</div>
                             </div>
                         </div>
@@ -6569,6 +7721,23 @@
                         </div>
                         
                         ${evidenceHTML}
+                        
+                        <div style="margin-top:24px;padding-top:20px;border-top:1px solid var(--border);display:flex;justify-content:space-between;gap:12px">
+                            ${(() => {
+                                const roleNodes = nodes.filter(n => n.roleId === node.roleId).sort((a, b) => a.id.localeCompare(b.id));
+                                const currentIndex = roleNodes.findIndex(n => n.id === node.id);
+                                const prevNode = currentIndex > 0 ? roleNodes[currentIndex - 1] : null;
+                                const nextNode = currentIndex < roleNodes.length - 1 ? roleNodes[currentIndex + 1] : null;
+                                return `
+                                    <button ${prevNode ? `onclick="showNodeDetail('${prevNode.id}')"` : 'disabled'} style="padding:10px 20px;background:${prevNode ? 'var(--primary)' : '#e5e7eb'};color:${prevNode ? 'white' : '#9ca3af'};border:none;border-radius:6px;cursor:${prevNode ? 'pointer' : 'not-allowed'};font-size:14px;font-weight:500;display:flex;align-items:center;gap:8px">
+                                        ${prevNode ? '← ' + prevNode.id + ' ' + prevNode.name : '无上一节点'}
+                                    </button>
+                                    <button ${nextNode ? `onclick="showNodeDetail('${nextNode.id}')"` : 'disabled'} style="padding:10px 20px;background:${nextNode ? 'var(--primary)' : '#e5e7eb'};color:${nextNode ? 'white' : '#9ca3af'};border:none;border-radius:6px;cursor:${nextNode ? 'pointer' : 'not-allowed'};font-size:14px;font-weight:500;display:flex;align-items:center;gap:8px">
+                                        ${nextNode ? nextNode.id + ' ' + nextNode.name + ' →' : '无下一节点'}
+                                    </button>
+                                `;
+                            })()}
+                        </div>
                     </div>
                 </div>
             `;
@@ -6631,13 +7800,13 @@
                                         </div>
                                         <div class="flow-connector"><div class="flow-arrow-down"></div></div>
                                         <div class="flow-node pm" onclick="showNodeDetail('PM_002')">
-
+                                            
                                             <div class="flow-node-header">
                                                 <span class="flow-node-id">PM_002</span>
                                                 <span class="flow-node-risk R2">R2</span>
                                             </div>
-                                            <div class="flow-node-title">需求分析</div>
-                                            <div class="flow-node-desc">KANO分类、优先级排序</div>
+                                            <div class="flow-node-title">需求调研与挖掘</div>
+                                            <div class="flow-node-desc">用户访谈、问卷分析、需求池</div>
                                             <div class="flow-node-tags">
                                                 <span class="flow-tag input">输入</span>
                                                 <span class="flow-tag output">输出</span>
@@ -6645,13 +7814,13 @@
                                         </div>
                                         <div class="flow-connector"><div class="flow-arrow-down"></div></div>
                                         <div class="flow-node pm" onclick="showNodeDetail('PM_003')">
-
+                                            
                                             <div class="flow-node-header">
                                                 <span class="flow-node-id">PM_003</span>
                                                 <span class="flow-node-risk R2">R2</span>
                                             </div>
-                                            <div class="flow-node-title">PRD文档编写</div>
-                                            <div class="flow-node-desc">产品需求文档、验收标准</div>
+                                            <div class="flow-node-title">需求分析与优先级排序</div>
+                                            <div class="flow-node-desc">MoSCoW分类、功能清单</div>
                                             <div class="flow-node-tags">
                                                 <span class="flow-tag input">输入</span>
                                                 <span class="flow-tag output">输出</span>
@@ -6659,34 +7828,47 @@
                                         </div>
                                         <div class="flow-connector"><div class="flow-arrow-down"></div></div>
                                         <div class="flow-node pm" onclick="showNodeDetail('PM_004')">
-
+                                            
                                             <div class="flow-node-header">
                                                 <span class="flow-node-id">PM_004</span>
-                                                <span class="flow-node-risk R1">R1</span>
+                                                <span class="flow-node-risk R2">R2</span>
                                             </div>
-                                            <div class="flow-node-title">原型设计</div>
-                                            <div class="flow-node-desc">交互原型、页面流程图</div>
+                                            <div class="flow-node-title">PRD文档编写</div>
+                                            <div class="flow-node-desc">产品需求文档、GWT验收标准</div>
                                             <div class="flow-node-tags">
+                                                <span class="flow-tag input">输入</span>
                                                 <span class="flow-tag output">输出</span>
                                             </div>
                                         </div>
                                         <div class="flow-connector"><div class="flow-arrow-down"></div></div>
                                         <div class="flow-node pm" onclick="showNodeDetail('PM_005')">
-
+                                            
                                             <div class="flow-node-header">
                                                 <span class="flow-node-id">PM_005</span>
-                                                <span class="flow-node-risk R3">R3</span>
+                                                <span class="flow-node-risk R1">R1</span>
                                             </div>
-                                            <div class="flow-node-title">需求评审</div>
-                                            <div class="flow-node-desc">多方评审会议、需求确认</div>
+                                            <div class="flow-node-title">原型设计与评审</div>
+                                            <div class="flow-node-desc">交互原型、逻辑闭环</div>
                                             <div class="flow-node-tags">
-                                                <span class="flow-tag ai">多方参与</span>
+                                                <span class="flow-tag output">输出</span>
                                             </div>
                                         </div>
                                         <div class="flow-connector"><div class="flow-arrow-down"></div></div>
                                         <div class="flow-node pm" onclick="showNodeDetail('PM_006')">
                                             <div class="flow-node-header">
                                                 <span class="flow-node-id">PM_006</span>
+                                                <span class="flow-node-risk R2">R2</span>
+                                            </div>
+                                            <div class="flow-node-title">需求评审与确认</div>
+                                            <div class="flow-node-desc">多方评审、需求确认</div>
+                                            <div class="flow-node-tags">
+                                                <span class="flow-tag ai">多方参与</span>
+                                            </div>
+                                        </div>
+                                        <div class="flow-connector"><div class="flow-arrow-down"></div></div>
+                                        <div class="flow-node pm" onclick="showNodeDetail('PM_008')">
+                                            <div class="flow-node-header">
+                                                <span class="flow-node-id">PM_008</span>
                                                 <span class="flow-node-risk R3">R3</span>
                                             </div>
                                             <div class="flow-node-title">需求变更管理</div>
@@ -6696,13 +7878,13 @@
                                             </div>
                                         </div>
                                         <div class="flow-connector"><div class="flow-arrow-down"></div></div>
-                                        <div class="flow-node pm" onclick="showNodeDetail('PM_007')">
+                                        <div class="flow-node pm" onclick="showNodeDetail('PM_010')">
                                             <div class="flow-node-header">
-                                                <span class="flow-node-id">PM_007</span>
+                                                <span class="flow-node-id">PM_010</span>
                                                 <span class="flow-node-risk R2">R2</span>
                                             </div>
-                                            <div class="flow-node-title">需求验收</div>
-                                            <div class="flow-node-desc">功能验收、问题清单、签字确认</div>
+                                            <div class="flow-node-title">用户验收</div>
+                                            <div class="flow-node-desc">UAT测试、用户签字确认</div>
                                             <div class="flow-node-tags">
                                                 <span class="flow-tag output">输出</span>
                                             </div>
@@ -7319,6 +8501,26 @@
         function getAgentsForRole(roleId) {
             return aiAgents.filter(agent => agent.role === roleId);
         }
+
+        function renderRoleAttachmentSection(roleId) {
+            const role = roles.find(r => r.id === roleId);
+            const files = role && Array.isArray(role.files) ? role.files : [];
+            if (files.length === 0) return '';
+
+            return `
+                <div class="quality-card" style="margin-top:24px">
+                    <h2 style="margin:0 0 8px;font-size:18px;font-weight:600">附件列表</h2>
+                    <p style="margin:0 0 14px;color:var(--text-secondary);font-size:13px">点击附件名称直接下载文件。</p>
+                    <div style="display:flex;flex-wrap:wrap;gap:10px">
+                        ${files.map(fileName => `
+                            <a href="${encodeURI(fileName)}" download="${fileName}" style="display:inline-flex;align-items:center;padding:8px 14px;border:1px solid var(--border);border-radius:8px;background:#fff;color:var(--primary);font-size:13px;font-weight:500;text-decoration:none">
+                                ${fileName}
+                            </a>
+                        `).join('')}
+                    </div>
+                </div>
+            `;
+        }
         
         function renderRoleView(roleId) {
             const role = roles.find(r => r.id === roleId);
@@ -7404,10 +8606,10 @@
                                 <span class="risk-badge ${node.riskLevel}">${node.riskLevel}</span>
                             </div>
                             <div class="node-title">${node.name}</div>
-                            <div style="font-size:13px;color:var(--text-gray);margin-top:8px">${node.stageName}</div>
                         </div>
                     `).join('')}
                 </div>
+                ${renderRoleAttachmentSection(roleId)}
             `;
         }
         
@@ -7434,7 +8636,7 @@
                                     <div class="org-dept-name">${dept.name} <span style="font-size:11px;opacity:0.9">(${deptCount}人)</span></div>
                                     <div class="org-dept-leader">负责人：${dept.leader}</div>
                                 </div>
-                                <div class="org-dept-desc">${dept.description}</div>
+                                <div class="org-dept-desc">${dept.position}</div>
                                 <div class="org-dept-body">
                                     ${dept.groups.map(group => {
                                         const members = getGroupMembers(dept.id, group.id);
@@ -7475,21 +8677,77 @@
             if (!dept) return;
             
             const content = document.getElementById('content');
-            const totalPositions = dept.groups.reduce((acc, g) => acc + g.positions.length, 0);
+            const deptMemberCount = getDeptMemberCount(dept.id);
+            const deptColorLight = dept.color + '20';
             
-            content.innerHTML = `
-                <div class="page-header" style="border-left: 4px solid ${dept.color}">
-                    <button class="back-btn" onclick="showView('dept')">← 返回部门视图</button>
-                    <h1 class="page-title">${dept.name}</h1>
-                    <p class="page-desc">负责人：${dept.leader}</p>
+            // 部门概览
+            const overviewHTML = `
+                <div class="dept-overview" style="--dept-color: ${dept.color}; --dept-color-light: ${deptColorLight}">
+                    <div class="dept-overview-header">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2"/>
+                            <rect x="9" y="3" width="6" height="4" rx="1"/>
+                            <path d="M9 12h6M9 16h6"/>
+                        </svg>
+                        <span class="dept-overview-title">部门概览</span>
+                    </div>
+                    <div class="dept-overview-body">
+                        <div class="dept-overview-grid">
+                            <div class="dept-overview-item">
+                                <div class="dept-overview-item-label">部门定位</div>
+                                <div class="dept-overview-item-value">${dept.position}</div>
+                            </div>
+                            <div class="dept-overview-item">
+                                <div class="dept-overview-item-label">核心业务职能</div>
+                                <div class="dept-overview-item-value">${dept.coreFunctions.join('；')}</div>
+                            </div>
+                        </div>
+                        <div style="margin-bottom: 8px;">
+                            <span style="font-size: 12px; color: var(--text-gray); margin-right: 12px;">AI新范式支持：</span>
+                            <div class="dept-tags">
+                                ${dept.aiSupport.map(tag => `<span class="dept-tag ai">${tag}</span>`).join('')}
+                            </div>
+                        </div>
+                        <div>
+                            <span style="font-size: 12px; color: var(--text-gray); margin-right: 12px;">服务业务线：</span>
+                            <div class="dept-tags">
+                                ${dept.serviceLines.map(line => `<span class="dept-tag service">${line}</span>`).join('')}
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                
-                <div class="dept-detail-info">
-                    <div class="dept-detail-desc">${dept.description}</div>
+            `;
+            
+            // 部门负责人信息
+            const leader = dept.leaderInfo;
+            const leaderHTML = `
+                <div class="dept-leader-section" style="--dept-color: ${dept.color}">
+                    <div class="dept-leader-header">
+                        <div class="dept-leader-avatar">${dept.leader.charAt(0)}</div>
+                        <div class="dept-leader-info">
+                            <h3>部门负责人：${dept.leader}</h3>
+                            <p>岗位使命</p>
+                        </div>
+                    </div>
+                    <div class="dept-leader-body">
+                        <div class="dept-leader-mission">${leader.mission}</div>
+                        
+                        <div class="dept-leader-subtitle">核心职责</div>
+                        <div class="dept-responsibility-list">
+                            ${leader.responsibilities.map(r => `
+                                <div class="dept-responsibility-item">
+                                    <span class="area">${r.area}</span>
+                                    <span class="detail">${r.detail}</span>
+                                </div>
+                            `).join('')}
+                        </div>
+                    </div>
                 </div>
-                
-                <h2 style="margin:32px 0 16px;font-size:18px;font-weight:600">业务小组（${dept.groups.length}个）</h2>
-                
+            `;
+            
+            // 业务小组
+            const groupsHTML = `
+                <h2 style="margin:0 0 16px;font-size:18px;font-weight:600">业务小组（${dept.groups.length}个）</h2>
                 <div class="group-grid">
                     ${dept.groups.map(group => `
                         <div class="group-card" style="--dept-color: ${dept.color}">
@@ -7497,6 +8755,8 @@
                                 <div class="group-name">${group.name}</div>
                                 <div class="group-position-count">${group.positions.length}个岗位</div>
                             </div>
+                            ${group.position ? `<div class="group-card-position">${group.position}</div>` : ''}
+                            ${group.manager ? `<div class="group-card-manager">责任人：<strong>${group.manager}</strong></div>` : ''}
                             <div class="group-positions">
                                 ${group.positions.map(pos => {
                                     const role = roles.find(r => r.id === pos.mapToRole);
@@ -7514,6 +8774,18 @@
                         </div>
                     `).join('')}
                 </div>
+            `;
+            
+            content.innerHTML = `
+                <div class="page-header" style="border-left: 4px solid ${dept.color}">
+                    <button class="back-btn" onclick="showView('dept')">← 返回部门视图</button>
+                    <h1 class="page-title">${dept.name} (${dept.id})</h1>
+                    <p class="page-desc">负责人：${dept.leader} · ${deptMemberCount}人 · ${dept.groups.length}个业务小组</p>
+                </div>
+                
+                ${overviewHTML}
+                ${leaderHTML}
+                ${groupsHTML}
             `;
         }
         
@@ -7578,7 +8850,7 @@
                 { id: 'AIBE', name: 'AI后端工程师(DEV)', color: '#10B981' },
                 { id: 'AITE', name: 'AI测试工程师', color: '#F59E0B' },
                 { id: 'CSM', name: '客户服务经理', color: '#EC4899' },
-                { id: 'CSE', name: '业务拓展岗', color: '#EF4444' },
+{ id: 'CSE', name: '企业业务拓展岗', color: '#EF4444' },
                 { id: 'TDG-VDG', name: '可信数据治理岗', color: '#6366F1' },
                 { id: 'TDG-DEL', name: '可信数据验收交付岗', color: '#8B5CF6' },
                 { id: 'TDG-AIIE', name: 'AI交互工程师(TDG)', color: '#0891B2' },
@@ -7790,6 +9062,26 @@
             `;
         }
         
+        function renderTDGRuleView() {
+            const content = document.getElementById('content');
+            
+            content.innerHTML = `
+                <div class="page-header">
+                    <button class="back-btn" onclick="showView('dept')">← 返回部门视图</button>
+                    <h1 class="page-title">TDG数据治理服务规范</h1>
+                    <p class="page-desc">北京数衍科技有限公司 - 数据治理服务标准与流程</p>
+                </div>
+                
+                <div style="background:white;border-radius:8px;box-shadow:0 2px 8px rgba(0,0,0,0.08);overflow:hidden;height:calc(100vh - 200px)">
+                    <iframe 
+                        src="TDG数据治理服务规范-北京数衍科技有限公司-20260114.pdf" 
+                        style="width:100%;height:100%;border:none"
+                        title="TDG数据治理服务规范">
+                    </iframe>
+                </div>
+            `;
+        }
+        
         // ==================== 搜索功能 ====================
         document.getElementById('globalSearch').addEventListener('input', function(e) {
             const keyword = e.target.value.trim().toLowerCase();
@@ -7874,22 +9166,90 @@
         function showNodeAgentModal(nodeId) {
             const node = nodes.find(n => n.id === nodeId);
             if (!node) return;
-            const agentName = node.aiConfig.agentType;
-            const agent = aiAgents.find(a => a.name === agentName);
+            
             const role = roles.find(r => r.id === node.roleId);
             const roleColor = role ? role.color : '#3B82F6';
             
+            // 尝试多种方式查找AI智能体
+            let agent = null;
+            
+            // 方式1：通过agentType精确匹配
+            const agentName = node.aiConfig.agentType;
+            agent = aiAgents.find(a => a.name === agentName);
+            
+            // 方式2：通过applicableScenes匹配
             if (!agent) {
+                const nodeScene = `${node.id} ${node.name}`;
+                agent = aiAgents.find(a => 
+                    a.role === node.roleId && 
+                    a.applicableScenes && 
+                    a.applicableScenes.some(s => s.startsWith(node.id))
+                );
+            }
+            
+            // 方式3：通过agentType部分匹配（如"理解类Agent"）
+            if (!agent) {
+                agent = aiAgents.find(a => 
+                    a.role === node.roleId && 
+                    (a.name.includes(agentName) || (a.type && a.type.includes(agentName)))
+                );
+            }
+            
+            if (!agent) {
+                // 显示多智能体信息（基于node的aiConfig）
                 const overlay = document.createElement('div');
                 overlay.className = 'agent-modal-overlay';
+                
+                let aiInfo = '';
+                if (node.aiConfig.usage) {
+                    aiInfo += `<div class="agent-modal-section">
+                        <div class="agent-modal-section-title">使用方式</div>
+                        <div class="agent-modal-desc">${node.aiConfig.usage}</div>
+                    </div>`;
+                }
+                if (node.aiConfig.supervision) {
+                    aiInfo += `<div class="agent-modal-section">
+                        <div class="agent-modal-section-title">监督机制</div>
+                        <div class="agent-modal-desc">${node.aiConfig.supervision}</div>
+                    </div>`;
+                }
+                if (node.aiConfig['上岗阶段']) {
+                    aiInfo += `<div class="agent-modal-section">
+                        <div class="agent-modal-section-title">上岗阶段</div>
+                        <div class="agent-modal-desc">${node.aiConfig['上岗阶段']}</div>
+                    </div>`;
+                }
+                if (node.aiConfig['权限边界']) {
+                    aiInfo += `<div class="agent-modal-section">
+                        <div class="agent-modal-section-title">权限边界</div>
+                        <div class="agent-modal-desc">${node.aiConfig['权限边界']}</div>
+                    </div>`;
+                }
+                if (node.aiConfig['结果边界']) {
+                    aiInfo += `<div class="agent-modal-section">
+                        <div class="agent-modal-section-title">结果边界</div>
+                        <div class="agent-modal-desc">${node.aiConfig['结果边界']}</div>
+                    </div>`;
+                }
+                if (node.aiConfig['风险边界']) {
+                    aiInfo += `<div class="agent-modal-section">
+                        <div class="agent-modal-section-title">风险边界</div>
+                        <div class="agent-modal-desc">${node.aiConfig['风险边界']}</div>
+                    </div>`;
+                }
+                
                 overlay.innerHTML = `
                     <div class="agent-modal">
                         <div class="agent-modal-header" style="--role-color:${roleColor}">
-                            <h2>AI智能体详情</h2>
+                            <div>
+                                <div class="agent-modal-id">${node.aiConfig.agentType}</div>
+                                <h2>AI辅助配置</h2>
+                                <div class="agent-modal-type">${node.aiConfig.agentType || ''}</div>
+                            </div>
                             <button class="agent-modal-close" onclick="this.closest('.agent-modal-overlay').remove()">✕</button>
                         </div>
                         <div class="agent-modal-body">
-                            <div style="text-align:center;color:var(--text-gray);padding:40px">未找到匹配的AI智能体</div>
+                            ${aiInfo}
                         </div>
                     </div>
                 `;
@@ -7907,21 +9267,24 @@
                         <div>
                             <div class="agent-modal-id">${agent.id}</div>
                             <h2>${agent.name}</h2>
-                            <div class="agent-modal-type">${agent.type}</div>
+                            <div class="agent-modal-type">${agent.type || ''}</div>
                         </div>
                         <button class="agent-modal-close" onclick="this.closest('.agent-modal-overlay').remove()">✕</button>
                     </div>
                     <div class="agent-modal-body">
                         <div class="agent-modal-section">
                             <div class="agent-modal-section-title">描述</div>
-                            <div class="agent-modal-desc">${agent.description}</div>
+                            <div class="agent-modal-desc">${agent.description || ''}</div>
                         </div>
+                        ${agent.capabilities ? `
                         <div class="agent-modal-section">
                             <div class="agent-modal-section-title">核心能力</div>
                             <div class="agent-modal-caps">
                                 ${agent.capabilities.map(c => `<span class="agent-modal-cap">${c}</span>`).join('')}
                             </div>
                         </div>
+                        ` : ''}
+                        ${agent.supervision ? `
                         <div class="agent-modal-section">
                             <div class="agent-modal-section-title">监督机制</div>
                             <div class="agent-modal-supervisions">
@@ -7939,6 +9302,7 @@
                                 </div>
                             </div>
                         </div>
+                        ` : ''}
                     </div>
                 </div>
             `;
